@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYAXXX | Software Localization Specialist</title>
+    <title>Kurdish Core | Software Localization</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,9 @@
                         sans: ['Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace'],
                     },
+                    colors: {
+                        brand: '#278E43',
+                    }
                 }
             }
         }
@@ -28,9 +31,9 @@
 
     <style type="text/css">
         :root {
+            --brand-color: #278E43;
             --bg-primary: #ffffff;
             --bg-surface: #f3f4f6;
-            --bg-surface-highlight: #e5e7eb;
             --text-primary: #111827;
             --text-secondary: #4b5563;
             --border-color: rgba(0, 0, 0, 0.1);
@@ -39,155 +42,140 @@
 
         .dark {
             --bg-primary: #050505;
-            --bg-surface: #121212;
-            --bg-surface-highlight: #1E1E1E;
+            --bg-surface: #111111;
             --text-primary: #ffffff;
             --text-secondary: #9ca3af;
-            --border-color: rgba(255, 255, 255, 0.1);
+            --border-color: rgba(255, 255, 255, 0.08);
             --nav-bg: rgba(5, 5, 5, 0.8);
         }
 
         body {
             background-color: var(--bg-primary);
             color: var(--text-primary);
-            transition: background-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.3s ease;
             scroll-behavior: smooth;
         }
 
         .glass-nav {
             background: var(--nav-bg);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-color);
         }
 
-        .text-gradient {
-            background: linear-gradient(to right, #60a5fa, #c084fc);
+        .text-brand-gradient {
+            background: linear-gradient(to right, #278E43, #56c476);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .mesh-bg {
             background-image: 
-                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+                radial-gradient(at 0% 0%, rgba(39, 142, 67, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(39, 142, 67, 0.08) 0px, transparent 50%);
         }
 
-        .custom-scrollbar::-webkit-scrollbar { width: 8px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: var(--bg-primary); }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        .btn-brand {
+            background-color: var(--brand-color);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-brand:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(39, 142, 67, 0.5);
+        }
+
+        /* Custom scrollbar to match green theme */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: #278E43; border-radius: 10px; }
     </style>
 </head>
-<body class="custom-scrollbar">
+<body class="antialiased">
 
-    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+    <nav class="fixed top-0 w-full z-50 glass-nav">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
-                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-violet-500 rounded-lg flex items-center justify-center text-white shadow-lg">
-                    <span class="font-mono font-bold text-xs">KU</span>
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#278E43] to-[#1a632e] rounded-xl flex items-center justify-center text-white shadow-lg transition-transform group-hover:rotate-6">
+                    <span class="font-bold text-lg font-mono">KC</span>
                 </div>
-                <span>Core</span>
+                <span class="text-xl font-black tracking-tighter uppercase">Kurdish <span class="text-[#278E43]">Core</span></span>
             </a>
 
-            <div class="flex items-center gap-6">
-                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--text-secondary)]">
-                    <a href="#work" class="hover:text-[var(--text-primary)] transition-colors">Projects</a>
-                    <a href="#keyboard" class="hover:text-[var(--text-primary)] transition-colors">Keyboard</a>
-                    <a href="#movies" class="hover:text-[var(--text-primary)] transition-colors">Subtitles</a>
-                    <a href="#dictionary" class="hover:text-[var(--text-primary)] transition-colors">Dictionary</a>
+            <div class="flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-[var(--text-secondary)]">
+                    <a href="#work" class="hover:text-[var(--brand-color)] transition-colors">Projects</a>
+                    <a href="#keyboard" class="hover:text-[var(--brand-color)] transition-colors">Keyboard</a>
+                    <a href="#movies" class="hover:text-[var(--brand-color)] transition-colors">Subtitles</a>
                 </div>
 
-                <button onclick="ThemeManager.toggle()" class="p-2 rounded-full hover:bg-[var(--bg-surface-highlight)] transition-colors border border-[var(--border-color)]">
-                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-yellow-400"></i>
+                <button onclick="ThemeManager.toggle()" class="p-2 rounded-full hover:bg-[var(--bg-surface)] border border-[var(--border-color)]">
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-[#278E43]"></i>
                     <i data-lucide="moon" class="w-5 h-5 block dark:hidden text-gray-600"></i>
                 </button>
-
-                <div class="hidden md:flex gap-2">
-                    <a href="mailto:cyaxxx@vivaldi.net" class="p-2 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] rounded-full border border-[var(--border-color)] group transition-all">
-                        <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110"></i>
-                    </a>
-                    <a href="https://github.com/CYAXXX" target="_blank" class="p-2 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] rounded-full border border-[var(--border-color)] group transition-all">
-                        <i data-lucide="github" class="w-5 h-5 group-hover:scale-110"></i>
-                    </a>
-                </div>
-
-                <button class="md:hidden" onclick="MobileMenu.toggle()">
-                    <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
-                </button>
             </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] p-6 flex flex-col gap-4 shadow-2xl">
-            <a href="#work" onclick="MobileMenu.close()" class="text-lg font-medium">Projects</a>
-            <a href="#keyboard" onclick="MobileMenu.close()" class="text-lg font-medium">Keyboard</a>
-            <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Subtitles</a>
-            <a href="#dictionary" onclick="MobileMenu.close()" class="text-lg font-medium">Dictionary</a>
         </div>
     </nav>
 
-    <header class="relative pt-48 pb-32 overflow-hidden mesh-bg">
-        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--bg-surface)] border border-[var(--border-color)] text-xs font-mono text-blue-500 mb-8 shadow-sm">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                </span>
-                Active in Open Source
+    <header class="relative pt-56 pb-32 overflow-hidden mesh-bg text-center">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#278E43]/10 border border-[#278E43]/20 text-[10px] font-bold uppercase tracking-widest text-[#278E43] mb-8">
+                <span class="w-2 h-2 rounded-full bg-[#278E43] animate-pulse"></span>
+                Language Engineering
             </div>
-            <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[1.1] mb-8">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-[0.95] mb-8">
                 Software that speaks <br />
-                <span class="text-gradient">Kurdish.</span>
+                <span class="text-brand-gradient">Kurdish.</span>
             </h1>
-            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed mb-10">
-                Engineering bridges between global software and the Kurdish community through precise localization and open-source contributions.
+            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto mb-12 font-medium">
+                Professional localization and native tools designed specifically for the Kurmanji community.
             </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#work" class="btn-brand px-10 py-4 rounded-2xl font-bold text-lg w-full sm:w-auto">View Projects</a>
+                <a href="https://github.com/CYAXXX" target="_blank" class="px-10 py-4 rounded-2xl font-bold text-lg border border-[var(--border-color)] hover:bg-[var(--bg-surface)] w-full sm:w-auto">Follow GitHub</a>
+            </div>
         </div>
     </header>
 
-    <div class="border-y border-[var(--border-color)] bg-[var(--bg-surface)]/50">
-        <div class="max-w-7xl mx-auto px-6 py-12">
-            <p class="text-center text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-[0.3em] mb-10">Trusted By Open Source Communities</p>
-            <div id="logo-marquee" class="flex flex-wrap justify-center gap-10 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500"></div>
-        </div>
-    </div>
-
     <section id="work" class="py-32">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Localization Works</h2>
-                <p class="text-[var(--text-secondary)]">Over 20 projects localized into Kurmanji Kurdish.</p>
+            <div class="mb-20">
+                <h2 class="text-4xl font-black tracking-tight mb-4">Localization Works</h2>
+                <div class="h-1.5 w-20 bg-[#278E43] rounded-full"></div>
             </div>
             <div id="work-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
         </div>
     </section>
 
-    <section id="keyboard" class="py-32 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/10">
+    <section id="keyboard" class="py-32 border-t border-[var(--border-color)] bg-[#278E43]/[0.02]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="flex-1 text-left">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-500/10 text-blue-500 border border-blue-500/20 text-xs font-mono mb-6">
-                        <i data-lucide="terminal" class="w-4 h-4"></i> Linux Kernel Support
-                    </div>
-                    <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tighter italic">Kurdish Keyboard</h2>
-                    <p class="text-lg text-[var(--text-secondary)] mb-8 leading-relaxed">
-                        A native XKB keyboard layout for Linux distributions. Designed for Kurdish (Kurmanji), providing seamless integration with system-level input methods.
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="flex-1">
+                    <h2 class="text-5xl font-black mb-6 tracking-tight">Kurdish <span class="text-[#278E43]">Linux</span> Layout</h2>
+                    <p class="text-lg text-[var(--text-secondary)] mb-10 leading-relaxed">
+                        Native XKB keyboard layout for Linux. No extra software needed—just pure, system-level Kurdish integration.
                     </p>
-                    <a href="https://github.com/Zinaro/KurdishKurmanjiKeyboard" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-xl shadow-blue-500/20">
+                    <a href="https://github.com/Zinaro/KurdishKurmanjiKeyboard" target="_blank" class="btn-brand inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold">
                         <i data-lucide="github" class="w-5 h-5"></i>
                         View Repository
                     </a>
                 </div>
                 <div class="flex-1 w-full">
-                    <div class="bg-[#0D1117] rounded-2xl border border-[#30363D] overflow-hidden shadow-2xl">
-                        <div class="flex items-center gap-2 px-4 py-3 bg-[#161B22] border-b border-[#30363D]">
-                            <div class="flex gap-1.5"><div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div><div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div><div class="w-3 h-3 rounded-full bg-[#27C93F]"></div></div>
-                            <div class="text-[10px] font-mono text-gray-500 ml-4">bash — install-keyboard.sh</div>
+                    <div class="bg-[#0D1117] rounded-3xl border border-[#30363D] overflow-hidden shadow-2xl">
+                        <div class="flex items-center px-6 py-4 bg-[#161B22] border-b border-[#30363D] justify-between">
+                            <div class="flex gap-2">
+                                <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                                <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                            </div>
+                            <span class="text-[10px] font-mono text-gray-500">Terminal — bash</span>
                         </div>
-                        <div class="p-6 font-mono text-sm sm:text-base text-gray-300">
-                            <div class="flex gap-3 mb-2"><span class="text-green-400">$</span><span>git clone https://github.com/Zinaro/KurdishKurmanjiKeyboard.git</span></div>
-                            <div class="flex gap-3 mb-2"><span class="text-green-400">$</span><span>cd KurdishKurmanjiKeyboard</span></div>
-                            <div class="flex gap-3 mb-2"><span class="text-green-400">$</span><span>chmod +x install.sh && ./install.sh</span></div>
-                            <div class="flex gap-3"><span class="text-green-400">$</span><span class="text-blue-400">setxkbmap ku</span></div>
+                        <div class="p-8 font-mono text-sm leading-relaxed text-gray-400">
+                            <div class="mb-2"><span class="text-[#278E43] font-bold">$</span> git clone KurdishKurmanjiKeyboard.git</div>
+                            <div class="mb-2"><span class="text-[#278E43] font-bold">$</span> cd KurdishKurmanjiKeyboard</div>
+                            <div class="mb-2"><span class="text-[#278E43] font-bold">$</span> ./install.sh</div>
+                            <div><span class="text-[#278E43] font-bold">$</span> <span class="text-white">setxkbmap ku</span></div>
                         </div>
                     </div>
                 </div>
@@ -197,75 +185,49 @@
 
     <section id="movies" class="py-32 border-t border-[var(--border-color)]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl md:text-5xl font-bold mb-16 tracking-tight">Cinema Subtitles</h2>
+            <h2 class="text-4xl font-black mb-16 tracking-tight">Cinema <span class="text-[#278E43]">Subtitles</span></h2>
             <div id="movie-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
-        </div>
-    </section>
-
-    <section id="dictionary" class="py-40 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-6 relative z-10">
-            <div class="inline-block p-5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-color)] mb-10 shadow-xl">
-                <i data-lucide="book-open" class="w-10 h-10 text-blue-500"></i>
-            </div>
-            <h2 class="text-4xl md:text-7xl font-bold tracking-tight mb-8">The Digital <span class="text-gradient">Dictionary</span></h2>
-            <div class="text-sm font-mono text-blue-500 font-bold uppercase tracking-widest animate-pulse">Platform Launching Soon</div>
         </div>
     </section>
 
     <script>
         const workData = [
-            { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "Search Engine", desc: "Core Privacy-Search Engine.", link: "https://duckduckgo.com" },
-            { name: "Vivaldi", slug: "vivaldi", color: "#EF3939", tag: "Browser", desc: "Power-user Browser.", link: "https://vivaldi.com" },
-            { name: "OBS Studio", slug: "obsstudio", color: "#FFFFFF", tag: "Broadcasting", desc: "Professional screen recording.", link: "https://obsproject.com/" },
-            { name: "Arch Linux", slug: "archlinux", color: "#1793D1", tag: "OS", desc: "Archinstall localization.", link: "https://archlinux.org" },
-            { name: "Telegram", slug: "telegram", color: "#26A5E4", tag: "Chat", desc: "Secure messaging application.", link: "https://telegram.org" },
-            { name: "Mastodon", slug: "mastodon", color: "#6364FF", tag: "Social", desc: "Decentralized networks.", link: "https://joinmastodon.org/ku" },
-            { name: "Roundcube", slug: "roundcube", color: "#37BEFF", tag: "Email", desc: "Webmail client localization.", link: "https://roundcube.net/" },
-            { name: "OpenMap", slug: "openstreetmap", color: "#7EBC6F", tag: "Maps", desc: "OpenStreetMap viewing.", link: "https://www.openstreetmap.org" },
-            { name: "Nuclear", slug: "nuclear", color: "#FA243C", tag: "Music", desc: "Music streaming player.", link: "https://nuclearplayer.com/" },
-            { name: "Harmonoid", slug: "harmonoid", color: "#00B2FF", tag: "Music", desc: "Material design music player.", link: "https://harmonoid.com/" },
-            { name: "Whoogle", slug: "google", color: "#4285F4", tag: "Search", desc: "Privacy-focused Google proxy.", link: "https://pypi.org/project/whoogle-search/" },
-            { name: "Kiwi Browser", slug: "kiwibrowser", color: "#47BD61", tag: "Mobile", desc: "Android extension support.", link: "https://github.com/kiwibrowser/src.next" },
-            { name: "Noctalia", slug: "wayland", color: "#00CCFF", tag: "Shell", desc: "Wayland desktop shell.", link: "https://docs.noctalia.dev/" },
-            { name: "ImageGlass", slug: "imageglass", color: "#2EADFF", tag: "Photos", desc: "Lean, versatile image viewer.", link: "https://imageglass.org/" },
-            { name: "qView", slug: "quicklook", color: "#40C4FF", tag: "Photos", desc: "Minimalist image viewer.", link: "https://interversehq.com/qview/" },
-            { name: "Quick Picture", slug: "windows", color: "#0078D4", tag: "Photos", desc: "Versatile Windows viewer.", link: "https://moduleart.github.io/quickpictureviewer" },
-            { name: "SongTube", slug: "youtube", color: "#FF0000", tag: "Media", desc: "Fast YouTube client.", link: "https://t.me/songtubechannel" },
-            { name: "Retro Music", slug: "android", color: "#3DDC84", tag: "Music", desc: "Elegant Android audio player.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
-            { name: "UntrackMe", slug: "fdroid", color: "#1976D2", tag: "Privacy", desc: "Link cleaning tool.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
-            { name: "Dopamine", slug: "windows", color: "#00A2ED", tag: "Music", desc: "Polished audio experience.", link: "https://digimezzo.github.io/site/" }
+            { name: "DuckDuckGo", slug: "duckduckgo", color: "#278E43", tag: "Privacy", desc: "Core privacy-search engine localization.", link: "https://duckduckgo.com" },
+            { name: "Vivaldi", slug: "vivaldi", color: "#278E43", tag: "Browser", desc: "Power-user browser localization.", link: "https://vivaldi.com" },
+            { name: "OBS Studio", slug: "obsstudio", color: "#278E43", tag: "Broadcasting", desc: "Professional screen recording tools.", link: "https://obsproject.com/" },
+            { name: "Arch Linux", slug: "archlinux", color: "#278E43", tag: "OS", desc: "Archinstall script localization.", link: "https://archlinux.org" },
+            { name: "Telegram", slug: "telegram", color: "#278E43", tag: "Chat", desc: "Secure messaging interface.", link: "https://telegram.org" },
+            { name: "Mastodon", slug: "mastodon", color: "#278E43", tag: "Social", desc: "Decentralized network interface.", link: "https://joinmastodon.org/ku" },
+            { name: "Roundcube", slug: "roundcube", color: "#278E43", tag: "Email", desc: "Webmail client localization.", link: "https://roundcube.net/" },
+            { name: "OpenMap", slug: "openstreetmap", color: "#278E43", tag: "Maps", desc: "Global map viewing tools.", link: "https://www.openstreetmap.org" },
+            { name: "Nuclear", slug: "nuclear", color: "#278E43", tag: "Music", desc: "Modern desktop music streaming.", link: "https://nuclearplayer.com/" },
+            { name: "Harmonoid", slug: "harmonoid", color: "#278E43", tag: "Music", desc: "Material design audio player.", link: "https://harmonoid.com/" },
+            { name: "Whoogle", slug: "google", color: "#278E43", tag: "Search", desc: "Privacy Google proxy localization.", link: "https://pypi.org/project/whoogle-search/" },
+            { name: "Kiwi Browser", slug: "kiwibrowser", color: "#278E43", tag: "Mobile", desc: "Android browser extension support.", link: "https://github.com/kiwibrowser/src.next" },
+            { name: "Noctalia", slug: "wayland", color: "#278E43", tag: "Shell", desc: "Wayland desktop shell localization.", link: "https://docs.noctalia.dev/" },
+            { name: "ImageGlass", slug: "imageglass", color: "#278E43", tag: "Photos", desc: "Versatile, lean image viewer.", link: "https://imageglass.org/" },
+            { name: "qView", slug: "quicklook", color: "#278E43", tag: "Photos", desc: "Minimalist desktop image viewer.", link: "https://interversehq.com/qview/" },
+            { name: "Quick Picture", slug: "windows", color: "#278E43", tag: "Photos", desc: "Fast Windows photo experience.", link: "https://moduleart.github.io/quickpictureviewer" },
+            { name: "SongTube", slug: "youtube", color: "#278E43", tag: "Media", desc: "Advanced YouTube client tools.", link: "https://t.me/songtubechannel" },
+            { name: "Retro Music", slug: "android", color: "#278E43", tag: "Music", desc: "Elegant Android audio experience.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
+            { name: "UntrackMe", slug: "fdroid", color: "#278E43", tag: "Privacy", desc: "Link cleaning and privacy tool.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
+            { name: "Dopamine", slug: "windows", color: "#278E43", tag: "Music", desc: "Polished Windows audio player.", link: "https://digimezzo.github.io/site/" }
         ];
 
         const movieData = [
-            { name: "EL CUERPO", year: "2012", genre: "MYSTERY", score: "7.6", desc: "Piştî mirina wê, bedena jina Alex winda dibe.", link: "https://tirsik.net/film/749", img: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9629845_p_v8_ab.jpg" },
-            { name: "BENEATH US", year: "2019", genre: "HORROR", score: "5.2", desc: "Xewna Emerîkî ji bo penaberan dibe xewnereşk.", link: "https://tirsik.net/film/769", img: "https://resizing.flixster.com/Ok0RGPgfcimS_e22U1_KDOJxaeE=/206x305/v2/https://resizing.flixster.com/NrlLuhm1zh71lVM27m23-VTFsw4=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RjZjFhZGE0LTFhYTgtNGI5NS05OTVmLTc0ZmE2MGYyYjVjNy53ZWJw" },
-            { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", link: "https://tirsik.net/film/680", img: "https://resizing.flixster.com/QqrCS2K1-mjyL7rA88Ko5IBRCUU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc2YjEzNWIxLTk5NjItNDM5ZC1iZjBlLWIxZmVjMzZkZDVkOC53ZWJw" }
+            { name: "THE HEAD HUNTER", year: "2018", desc: "Şervanekî serdema navîn li benda cinawirê ku keça wî kuştiye dimîne.", img: "https://m.media-amazon.com/images/M/MV5BMjA5OTY2MTM0OF5BMl5BanBnXkFtZTgwMDUyMDM4NzM@._V1_.jpg", link: "https://tirsik.net/film/771" },
+            { name: "BENEATH US", year: "2019", desc: "Xewna Emerîkî ji bo penaberan dibe xewnereşk.", img: "https://resizing.flixster.com/Ok0RGPgfcimS_e22U1_KDOJxaeE=/206x305/v2/https://resizing.flixster.com/NrlLuhm1zh71lVM27m23-VTFsw4=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RjZjFhZGE0LTFhYTgtNGI5NS05OTVmLTc0ZmE2MGYyYjVjNy53ZWJw", link: "https://tirsik.net/film/769" },
+            { name: "DON'T BREATHE", year: "2016", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", img: "https://resizing.flixster.com/QqrCS2K1-mjyL7rA88Ko5IBRCUU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc2YjEzNWIxLTk5NjItNDM5ZC1iZjBlLWIxZmVjMzZkZDVkOC53ZWJw", link: "https://tirsik.net/film/680" }
         ];
 
         const ThemeManager = {
             init() {
-                const saved = localStorage.getItem('theme');
-                if (saved === 'light') document.documentElement.classList.remove('dark');
+                if (localStorage.getItem('theme') === 'light') document.documentElement.classList.remove('dark');
                 lucide.createIcons();
             },
             toggle() {
                 const isDark = document.documentElement.classList.toggle('dark');
                 localStorage.setItem('theme', isDark ? 'dark' : 'light');
-                lucide.createIcons();
-                DataManager.renderMarquee();
-            }
-        };
-
-        const MobileMenu = {
-            toggle() {
-                const menu = document.getElementById('mobile-menu');
-                const isHidden = menu.classList.toggle('hidden');
-                document.getElementById('menu-icon').setAttribute('data-lucide', isHidden ? 'menu' : 'x');
-                lucide.createIcons();
-            },
-            close() {
-                document.getElementById('mobile-menu').classList.add('hidden');
-                document.getElementById('menu-icon').setAttribute('data-lucide', 'menu');
                 lucide.createIcons();
             }
         };
@@ -273,52 +235,37 @@
         const DataManager = {
             renderProjects() {
                 const container = document.getElementById('work-grid');
-                container.innerHTML = workData.map(item => {
-                    const iconColor = item.color.replace('#', '');
-                    return `
-                    <a href="${item.link}" target="_blank" class="p-6 rounded-2xl flex flex-col h-full group relative overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-[var(--border-color)] bg-[var(--bg-surface)]">
-                        <div class="flex items-start justify-between mb-6 relative z-10">
-                            <div class="w-12 h-12 rounded-xl bg-white/5 border border-[var(--border-color)] flex items-center justify-center p-2">
-                                <img src="https://cdn.simpleicons.org/${item.slug}/${iconColor}" 
-                                     class="w-full h-full object-contain transition-transform group-hover:scale-110" 
-                                     onerror="this.src='https://cdn.simpleicons.org/${item.slug}/white'"
-                                     alt="${item.name}">
+                container.innerHTML = workData.map(item => `
+                    <a href="${item.link}" target="_blank" class="p-8 rounded-3xl flex flex-col h-full group border border-[var(--border-color)] bg-[var(--bg-surface)] hover:border-[#278E43]/40 transition-all duration-500">
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="w-14 h-14 rounded-2xl bg-white/5 border border-[var(--border-color)] flex items-center justify-center p-3 transition-colors group-hover:bg-[#278E43]/10">
+                                <img src="https://cdn.simpleicons.org/${item.slug}/white" class="w-full h-full object-contain opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all" alt="${item.name}">
                             </div>
-                            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-secondary)]">${item.tag}</span>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-[#278E43]">${item.tag}</span>
                         </div>
-                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 relative z-10">${item.name}</h3>
-                        <p class="text-[var(--text-secondary)] text-sm leading-relaxed relative z-10">${item.desc}</p>
-                        <div class="absolute -bottom-16 -right-16 w-32 h-32 opacity-0 group-hover:opacity-10 blur-[40px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
+                        <h3 class="text-2xl font-bold mb-3 tracking-tight">${item.name}</h3>
+                        <p class="text-[var(--text-secondary)] text-sm leading-relaxed">${item.desc}</p>
                     </a>
-                `}).join('');
+                `).join('');
             },
             renderMovies() {
                 const container = document.getElementById('movie-grid');
                 container.innerHTML = movieData.map(movie => `
-                    <a href="${movie.link}" target="_blank" class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-[var(--bg-surface)] border border-[var(--border-color)] shadow-lg">
-                        <img src="${movie.img}" class="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-60">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                    <a href="${movie.link}" target="_blank" class="group relative aspect-[10/14] rounded-3xl overflow-hidden shadow-2xl bg-black">
+                        <img src="${movie.img}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
                         <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                            <h3 class="text-2xl font-black text-white italic mb-2 tracking-tight">${movie.name}</h3>
-                            <p class="text-sm text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-500">${movie.desc}</p>
+                            <h3 class="text-3xl font-black text-white italic tracking-tighter leading-none">${movie.name}</h3>
+                            <p class="text-sm text-gray-300 mt-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 line-clamp-2">${movie.desc}</p>
                         </div>
                     </a>
-                `).join('');
-            },
-            renderMarquee() {
-                const container = document.getElementById('logo-marquee');
-                const logos = ['duckduckgo', 'vivaldi', 'obsstudio', 'archlinux', 'telegram', 'mastodon', 'roundcube', 'openstreetmap'];
-                container.innerHTML = logos.map(slug => `
-                    <img src="https://cdn.simpleicons.org/${slug}/white" class="h-8 w-auto opacity-50 hover:opacity-100 transition-all duration-300" alt="${slug}">
                 `).join('');
             }
         };
 
-        // Initialize everything
         ThemeManager.init();
         DataManager.renderProjects();
         DataManager.renderMovies();
-        DataManager.renderMarquee();
     </script>
 </body>
 </html>
