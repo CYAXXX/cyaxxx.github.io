@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYAXXX | Software Localization Specialist</title>
-    
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+   
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -68,7 +68,7 @@
         }
 
         .mesh-bg {
-            background-image: 
+            background-image:
                 radial-gradient(at 0% 0%, rgba(39, 142, 67, 0.15) 0px, transparent 50%),
                 radial-gradient(at 100% 100%, rgba(39, 142, 67, 0.15) 0px, transparent 50%);
         }
@@ -81,35 +81,31 @@
 <body class="custom-scrollbar">
 
     <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
-                <div class="w-8 h-8 bg-[#278e43] rounded-lg flex items-center justify-center text-white shadow-lg">
-                    <span class="font-mono font-bold text-xs">KU</span>
-                </div>
-                <span>Core</span>
-            </a>
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center">
+            <!-- Left: Logo -->
+            <div class="flex-1 flex justify-start">
+                <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-3 group">
+                    <div class="p-2 bg-[#278e43]/10 rounded-lg border border-[#278e43]/20 group-hover:bg-[#278e43] group-hover:text-white transition-all duration-300">
+                        <i data-lucide="languages" class="w-5 h-5 text-[#278e43] group-hover:text-white transition-colors"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight">CYA<span class="text-[#278e43]">XXX</span></span>
+                </a>
+            </div>
 
-            <div class="flex items-center gap-6">
-                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--text-secondary)]">
-                    <a href="#work" class="hover:text-[var(--brand-primary)] transition-colors">Projects</a>
-                    <a href="#keyboard" class="hover:text-[var(--brand-primary)] transition-colors">Keyboard</a>
-                    <a href="#movies" class="hover:text-[var(--brand-primary)] transition-colors">Subtitles</a>
-                    <a href="#dictionary" class="hover:text-[var(--brand-primary)] transition-colors">Dictionary</a>
-                </div>
+            <!-- Center: Nav Links -->
+            <div class="hidden md:flex flex-1 justify-center items-center gap-8 text-sm font-medium text-[var(--text-secondary)]">
+                <a href="#work" class="hover:text-[var(--brand-primary)] transition-colors">Projects</a>
+                <a href="#keyboard" class="hover:text-[var(--brand-primary)] transition-colors">Keyboard</a>
+                <a href="#movies" class="hover:text-[var(--brand-primary)] transition-colors">Subtitles</a>
+                <a href="#dictionary" class="hover:text-[var(--brand-primary)] transition-colors">Dictionary</a>
+            </div>
 
+            <!-- Right: Toggle & Mobile Menu -->
+            <div class="flex-1 flex justify-end items-center gap-4">
                 <button onclick="ThemeManager.toggle()" class="p-2 rounded-full hover:bg-[var(--bg-surface-highlight)] transition-colors border border-transparent hover:border-[var(--border-color)]">
                     <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-yellow-400"></i>
                     <i data-lucide="moon" class="w-5 h-5 block dark:hidden text-gray-600"></i>
                 </button>
-
-                <div class="hidden md:flex gap-2">
-                    <a href="mailto:cyaxxx@vivaldi.net" class="p-2 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] rounded-full border border-[var(--border-color)] group transition-all">
-                        <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110"></i>
-                    </a>
-                    <a href="https://github.com/CYAXXX" target="_blank" class="p-2 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] rounded-full border border-[var(--border-color)] group transition-all">
-                        <i data-lucide="github" class="w-5 h-5 group-hover:scale-110"></i>
-                    </a>
-                </div>
 
                 <button class="md:hidden" onclick="MobileMenu.toggle()">
                     <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
@@ -137,16 +133,8 @@
 
     <header class="relative pt-48 pb-32 overflow-hidden mesh-bg">
         <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--bg-surface)] border border-[var(--border-color)] text-xs font-mono text-[#278e43] mb-8 shadow-sm">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#278e43] opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#278e43]"></span>
-                </span>
-                Active in Open Source
-            </div>
             <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[1.1] mb-8">
-                Software that speaks <br />
-                <span class="text-gradient">Kurdish.</span>
+                Software that speaks <span class="text-gradient">Kurdish.</span>
             </h1>
             <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed mb-10">
                 Engineering bridges between global software and the Kurdish community through precise localization and open-source contributions.
@@ -157,7 +145,8 @@
     <div class="border-y border-[var(--border-color)] bg-[var(--bg-surface)]/50">
         <div class="max-w-7xl mx-auto px-6 py-12">
             <p class="text-center text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-[0.3em] mb-10">Trusted By Open Source Communities</p>
-            <div id="logo-marquee" class="flex flex-wrap justify-center gap-10 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500"></div>
+            <!-- Removed grayscale so it is colorful by default -->
+            <div id="logo-marquee" class="flex flex-wrap justify-center gap-10 md:gap-16 items-center transition-all duration-500"></div>
         </div>
     </div>
 
@@ -213,15 +202,85 @@
         </div>
     </section>
 
-    <section id="dictionary" class="py-40 text-center relative overflow-hidden border-t border-[var(--border-color)]">
-        <div class="max-w-4xl mx-auto px-6 relative z-10">
-            <div class="inline-block p-5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-color)] mb-10 shadow-xl">
-                <i data-lucide="book-open" class="w-10 h-10 text-[#278e43]"></i>
+    <!-- Dictionary CTA Section -->
+    <section id="dictionary" class="py-32 relative overflow-hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)]">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" style="background-image: radial-gradient(#888 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block p-4 rounded-full bg-[var(--bg-surface)] border border-[var(--border-color)] mb-8 shadow-lg">
+                <i data-lucide="book-open" class="w-8 h-8 text-[#278e43]"></i>
             </div>
-            <h2 class="text-4xl md:text-7xl font-bold tracking-tight mb-8">The Digital <span class="text-gradient">Dictionary</span></h2>
-            <div class="text-sm font-mono text-[#278e43] font-bold uppercase tracking-widest animate-pulse">Platform Launching Soon</div>
+           
+            <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-[var(--text-primary)]">
+                Ferhenga <span class="text-gradient">Dijîtal</span>
+            </h2>
+           
+            <p class="text-xl text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto">
+                Defining the future of technology in our language. Join the open database of technical Kurdish terms.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- Removed Visit Website Button -->
+                <!-- Updated Translate Now Button to Green -->
+                <a href="https://ferheng-pmfg896bp0j0.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent">
+                    <i data-lucide="languages" class="w-5 h-5"></i> Translate Now
+                </a>
+            </div>
+
+            <!-- Terminal output imitation -->
+            <div class="mt-16 max-w-2xl mx-auto bg-[#0a0a0a] border border-white/10 rounded-lg p-6 font-mono text-left text-sm shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#278e43] to-[#56c476]"></div>
+                <div class="flex gap-2 mb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex gap-2">
+                        <span class="text-[#278e43]">❯</span>
+                        <span class="text-white">dict lookup "interface"</span>
+                    </div>
+                    <div class="pl-4 text-gray-400">
+                        > Finding matches...<br>
+                        > Result: <span class="text-white font-bold">"Navrû"</span> (Noun)<br>
+                        > Definition: The shared boundary across which two or more separate components of a computer system exchange information.
+                    </div>
+                    <div class="flex gap-2 mt-4">
+                        <span class="text-[#278e43]">❯</span>
+                        <span class="text-white animate-pulse">_</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-16 px-6 bg-[var(--bg-surface)] text-center border-t border-[var(--border-color)]">
+        <div class="flex flex-col items-center justify-center gap-8">
+            <div class="flex items-center gap-3">
+                 <div class="p-2 bg-[#278e43]/10 rounded-lg border border-[#278e43]/20">
+                    <i data-lucide="languages" class="w-5 h-5 text-[#278e43]"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight">CYA<span class="text-[#278e43]">XXX</span></span>
+            </div>
+           
+            <div class="flex gap-6">
+                <a href="https://github.com/CYAXXX" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-[#278e43] transition-all group">
+                    <i data-lucide="github" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    <span class="font-medium">GitHub</span>
+                </a>
+                <a href="mailto:cyaxxx@vivaldi.net" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-[#278e43] transition-all group">
+                    <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    <span class="font-medium">Contact</span>
+                </a>
+            </div>
+
+            <div class="text-[10px] text-[var(--text-secondary)] font-mono uppercase tracking-[0.2em] mt-8">
+                &copy; 2024 CYAXXX. Open Source.
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Custom OBS SVG stored as a string
@@ -229,27 +288,28 @@
             <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M43.765,34.373 c1.267-3.719-0.131-8.03-3.567-10.23c-4.024-2.576-9.374-1.401-11.95,2.623h0c-1.854,2.896-1.756,6.474-0.061,9.215 c-1.009,1.556-2.369,2.917-4.07,3.931c-5.4,3.22-12.356,1.952-16.225-2.779c-0.186-0.262-0.367-0.527-0.541-0.797 c2.62,3.273,7.404,4.213,11.166,2.09c4.161-2.348,5.631-7.625,3.283-11.786v0c-1.618-2.867-4.627-4.456-7.703-4.399 c-0.994-1.792-1.563-3.852-1.563-6.047c0-5.482,3.537-10.119,8.448-11.8c0.36-0.07,0.728-0.116,1.094-0.168 c-3.321,1.208-5.698,4.384-5.698,8.123c0,4.778,3.873,8.651,8.651,8.651c3.179,0,5.949-1.719,7.453-4.274 c2.197,0.015,4.417,0.594,6.427,1.825c5.056,3.094,7.173,9.294,5.39,14.713C44.137,33.643,43.948,34.007,43.765,34.373z"></path>
         </svg>`;
 
+        // Add 'fallbackIcon' for items that might not have a SimpleIcon, or specific generic overrides
         const workData = [
             { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "Search Engine", desc: "Core Privacy-Search Engine.", link: "https://duckduckgo.com" },
             { name: "Vivaldi", slug: "vivaldi", color: "#EF3939", tag: "Browser", desc: "Power-user Browser.", link: "https://vivaldi.com" },
-            { name: "OBS Studio", slug: "obsstudio", color: "#FFFFFF", tag: "Broadcasting", desc: "Professional screen recording.", link: "https://obsproject.com/", customIcon: true },
+            { name: "OBS Studio", slug: "obs", color: "#FFFFFF", tag: "Broadcasting", desc: "Professional screen recording.", link: "https://obsproject.com/", customIcon: true },
             { name: "Arch Linux", slug: "archlinux", color: "#1793D1", tag: "OS", desc: "Archinstall localization.", link: "https://archlinux.org" },
             { name: "Telegram", slug: "telegram", color: "#26A5E4", tag: "Chat", desc: "Secure messaging application.", link: "https://telegram.org" },
             { name: "Mastodon", slug: "mastodon", color: "#6364FF", tag: "Social", desc: "Decentralized networks.", link: "https://joinmastodon.org/ku" },
             { name: "Roundcube", slug: "roundcube", color: "#37BEFF", tag: "Email", desc: "Webmail client localization.", link: "https://roundcube.net/" },
             { name: "OpenMap", slug: "openstreetmap", color: "#7EBC6F", tag: "Maps", desc: "OpenStreetMap viewing.", link: "https://www.openstreetmap.org" },
-            { name: "Nuclear", slug: "nuclear", color: "#FA243C", tag: "Music", desc: "Music streaming player.", link: "https://nuclearplayer.com/" },
-            { name: "Harmonoid", slug: "harmonoid", color: "#00B2FF", tag: "Music", desc: "Material design music player.", link: "https://harmonoid.com/" },
+            { name: "Nuclear", slug: "nuclear", color: "#FA243C", tag: "Music", desc: "Music streaming player.", link: "https://nuclearplayer.com/", lucideIcon: "music" },
+            { name: "Harmonoid", slug: "harmonoid", color: "#00B2FF", tag: "Music", desc: "Material design music player.", link: "https://harmonoid.com/", lucideIcon: "music" },
             { name: "Whoogle", slug: "google", color: "#4285F4", tag: "Search", desc: "Privacy-focused Google proxy.", link: "https://pypi.org/project/whoogle-search/" },
-            { name: "Kiwi Browser", slug: "kiwibrowser", color: "#47BD61", tag: "Mobile", desc: "Android extension support.", link: "https://github.com/kiwibrowser/src.next" },
-            { name: "Noctalia", slug: "wayland", color: "#00CCFF", tag: "Shell", desc: "Wayland desktop shell.", link: "https://docs.noctalia.dev/" },
-            { name: "ImageGlass", slug: "imageglass", color: "#2EADFF", tag: "Photos", desc: "Lean, versatile image viewer.", link: "https://imageglass.org/" },
-            { name: "qView", slug: "quicklook", color: "#40C4FF", tag: "Photos", desc: "Minimalist image viewer.", link: "https://interversehq.com/qview/" },
-            { name: "Quick Picture", slug: "windows", color: "#0078D4", tag: "Photos", desc: "Versatile Windows viewer.", link: "https://moduleart.github.io/quickpictureviewer" },
+            { name: "Kiwi Browser", slug: "kiwibrowser", color: "#47BD61", tag: "Mobile", desc: "Android extension support.", link: "https://github.com/kiwibrowser/src.next", lucideIcon: "smartphone" },
+            { name: "Noctalia", slug: "wayland", color: "#00CCFF", tag: "Shell", desc: "Wayland desktop shell.", link: "https://docs.noctalia.dev/", lucideIcon: "monitor" },
+            { name: "ImageGlass", slug: "imageglass", color: "#2EADFF", tag: "Photos", desc: "Lean, versatile image viewer.", link: "https://imageglass.org/", lucideIcon: "image" },
+            { name: "qView", slug: "quicklook", color: "#40C4FF", tag: "Photos", desc: "Minimalist image viewer.", link: "https://interversehq.com/qview/", lucideIcon: "image" },
+            { name: "Quick Picture", slug: "windows", color: "#0078D4", tag: "Photos", desc: "Versatile Windows viewer.", link: "https://moduleart.github.io/quickpictureviewer", lucideIcon: "image" },
             { name: "SongTube", slug: "youtube", color: "#FF0000", tag: "Media", desc: "Fast YouTube client.", link: "https://t.me/songtubechannel" },
-            { name: "Retro Music", slug: "android", color: "#3DDC84", tag: "Music", desc: "Elegant Android audio player.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
-            { name: "UntrackMe", slug: "fdroid", color: "#1976D2", tag: "Privacy", desc: "Link cleaning tool.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
-            { name: "Dopamine", slug: "windows", color: "#00A2ED", tag: "Music", desc: "Polished audio experience.", link: "https://digimezzo.github.io/site/" }
+            { name: "Retro Music", slug: "android", color: "#3DDC84", tag: "Music", desc: "Elegant Android audio player.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic", lucideIcon: "music" },
+            { name: "UntrackMe", slug: "fdroid", color: "#1976D2", tag: "Privacy", desc: "Link cleaning tool.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/", lucideIcon: "shield" },
+            { name: "Dopamine", slug: "windows", color: "#00A2ED", tag: "Music", desc: "Polished audio experience.", link: "https://digimezzo.github.io/site/", lucideIcon: "music" }
         ];
 
         const movieData = [
@@ -257,7 +317,7 @@
             { name: "BENEATH US", year: "2019", genre: "HORROR", score: "5.2", desc: "Xewna Emerîkî ji bo penaberan dibe xewnereşk.", link: "https://tirsik.net/film/769", img: "https://resizing.flixster.com/Ok0RGPgfcimS_e22U1_KDOJxaeE=/206x305/v2/https://resizing.flixster.com/NrlLuhm1zh71lVM27m23-VTFsw4=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RjZjFhZGE0LTFhYTgtNGI5NS05OTVmLTc0ZmE2MGYyYjVjNy53ZWJw" },
             { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", link: "https://tirsik.net/film/680", img: "https://resizing.flixster.com/QqrCS2K1-mjyL7rA88Ko5IBRCUU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc2YjEzNWIxLTk5NjItNDM5ZC1iZjBlLWIxZmVjMzZkZDVkOC53ZWJw" },
             { name: "THE HEAD HUNTER", year: "2019", genre: "HORROR", score: "5.4", desc: "kolesîyona serê mirovan ya şergerek ji serdema navîn, wenda ye. lê tenê ya wî cinawirî maye ku berî çend salan keça wî kuştibû..", link: "https://tirsik.net/film/771", img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMWU5MmY3YzAtMGZkNi00YWUwLWExZmQtYmI2OTZhZDVlNTdlXkEyXkFqcGc%40._V1__SX500&f=1&h=500" },
-        ]; 
+        ];
 
         const ThemeManager = {
             init() {
@@ -270,7 +330,6 @@
                 localStorage.setItem('theme', isDark ? 'dark' : 'light');
                 lucide.createIcons();
                 DataManager.renderMarquee();
-                // Redraw projects to handle custom SVG color if needed
                 DataManager.renderProjects();
             }
         };
@@ -294,25 +353,37 @@
                 const container = document.getElementById('work-grid');
                 container.innerHTML = workData.map(item => {
                     let iconHtml = '';
+                   
+                    // Logic to handle icon type
                     if (item.customIcon) {
-                        iconHtml = `<div class="w-6 h-6 text-[#278e43] group-hover:text-white transition-colors">${obsSvg}</div>`;
+                        iconHtml = `<div class="w-6 h-6 text-[#278e43]">${obsSvg}</div>`;
+                    } else if (item.lucideIcon) {
+                        // Use Lucide icon for missing logos
+                        iconHtml = `<i data-lucide="${item.lucideIcon}" class="w-6 h-6 transition-all duration-300" style="color: ${item.color}"></i>`;
                     } else {
-                        iconHtml = `<img src="https://cdn.simpleicons.org/${item.slug}/${item.color.replace('#','')}" class="w-6 h-6" alt="${item.name}">`;
+                        // Use SimpleIcons, formatted to allow grayscale -> color transition
+                        // We use the specific color URL from simpleicons, but control display with CSS filters
+                        iconHtml = `<img src="https://cdn.simpleicons.org/${item.slug}/${item.color.replace('#','')}" class="w-6 h-6 transition-all duration-300" alt="${item.name}">`;
                     }
 
                     return `
-                    <a href="${item.link}" target="_blank" class="p-6 rounded-2xl flex flex-col h-full group relative overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-[var(--border-color)] bg-[var(--bg-surface)]">
+                    <a href="${item.link}" target="_blank" class="p-6 rounded-2xl flex flex-col h-full group relative overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-[var(--border-color)] bg-[var(--bg-surface)] hover:border-[var(--brand-primary)]">
                         <div class="flex items-start justify-between mb-6 relative z-10">
-                            <div class="w-12 h-12 rounded-xl bg-[var(--bg-surface-highlight)] border border-[var(--border-color)] flex items-center justify-center transition-all group-hover:bg-[#278e43]">
+                            <!-- Removed group-hover:bg-[#278e43] -->
+                            <div class="w-12 h-12 rounded-xl bg-[var(--bg-surface-highlight)] border border-[var(--border-color)] flex items-center justify-center transition-all">
                                 ${iconHtml}
                             </div>
                             <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-secondary)]">${item.tag}</span>
                         </div>
                         <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 relative z-10">${item.name}</h3>
                         <p class="text-[var(--text-secondary)] text-sm leading-relaxed relative z-10">${item.desc}</p>
-                        <div class="absolute -bottom-16 -right-16 w-32 h-32 opacity-0 group-hover:opacity-10 blur-[40px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
+                        <!-- Updated hover glow to use item color but keep it subtle -->
+                        <div class="absolute -bottom-16 -right-16 w-32 h-32 opacity-0 group-hover:opacity-5 blur-[40px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
                     </a>
                 `}).join('');
+               
+                // Re-initialize icons for newly added Lucide tags
+                lucide.createIcons();
             },
             renderMovies() {
                 const container = document.getElementById('movie-grid');
@@ -330,12 +401,22 @@
             renderMarquee() {
                 const container = document.getElementById('logo-marquee');
                 const isDark = document.documentElement.classList.contains('dark');
-                const logos = ['duckduckgo', 'vivaldi', 'obsstudio', 'archlinux', 'telegram', 'mastodon'];
-                container.innerHTML = logos.map(slug => {
-                    if (slug === 'obsstudio') {
-                        return `<div class="h-8 w-8 opacity-50 hover:opacity-100 transition-all duration-300 text-[var(--text-secondary)]">${obsSvg}</div>`;
+                const logos = [
+                    { slug: 'duckduckgo', name: 'DuckDuckGo' },
+                    { slug: 'vivaldi', name: 'Vivaldi' },
+                    { slug: 'obs', name: 'OBS', custom: true },
+                    { slug: 'archlinux', name: 'Arch Linux' },
+                    { slug: 'telegram', name: 'Telegram' },
+                    { slug: 'mastodon', name: 'Mastodon' }
+                ];
+               
+                // Removed opacity and grayscale classes to make it colorful by default
+                container.innerHTML = logos.map(logo => {
+                    if (logo.custom) {
+                        return `<div class="h-8 w-8 text-[var(--text-secondary)]" title="${logo.name}">${obsSvg}</div>`;
                     }
-                    return `<img src="https://cdn.simpleicons.org/${slug}" class="h-8 w-auto opacity-50 hover:opacity-100 transition-all duration-300 ${isDark && (slug==='archlinux') ? 'invert' : ''}" alt="${slug}">`;
+                    const invertClass = (isDark && logo.slug === 'archlinux') ? 'invert' : '';
+                    return `<img src="https://cdn.simpleicons.org/${logo.slug}" class="h-8 w-auto ${invertClass}" alt="${logo.name}" title="${logo.name}">`;
                 }).join('');
             }
         };
