@@ -212,19 +212,27 @@
 
     <script>
         const workData = [
-            { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "Search Engine", desc: "Core privacy-search localization.", link: "https://duckduckgo.com" },
-            { name: "Vivaldi", slug: "vivaldi", color: "#EF3939", tag: "Bowser", desc: "Power-user browser UI modules.", link: "https://vivaldi.com" },
-            { name: "OBS Studio", slug: "obsstudio", color: "#FFFFFF", tag: "Screen Recorder", desc: "Broadcasting engine Kurdish pack.", link: "https://obsproject.com/" },
-            { name: "Arch Linux", slug: "archlinux", color: "#1793D1", tag: "Archinstaller", desc: "Archinstall & CLI localization.", link: "https://archlinux.org" },
-            { name: "Telegram", slug: "telegram", color: "#26A5E4", tag: "Messaging Application", desc: "Secure messaging language sync.", link: "https://telegram.org" },
-            { name: "Mastodon", slug: "mastodon", color: "#6364FF", tag: "Social Media Network", desc: "Decentralized UI localization.", link: "https://joinmastodon.org/ku" },
-            { name: "Roundcube", slug: "roundcube", color: "#37BEFF", tag: "Email Client", desc: "Webmail interface localization.", link: "https://roundcube.net/" },
-            { name: "OpenMap", slug: "openstreetmap", color: "#7EBC6F", tag: "Maps", desc: "Map viewing application.", link: "https://www.openstreetmap.org" },
-            { name: "Nuclear", slug: "applemusic", color: "#FA243C", tag: "Music Player", desc: "Music streaming program.", link: "https://nuclearplayer.com/" },
-            { name: "Harmonoid", slug: "flutter", color: "#02569B", tag: "Music Player", desc: "Material Design music player.", link: "https://harmonoid.com/" },
-            { name: "Whoogle", slug: "google", color: "#4285F4", tag: "Search Engine", desc: "Self-hosted privacy search.", link: "https://pypi.org/project/whoogle-search/" },
-            { name: "Kiwi Browser", slug: "Kiwi", color: "#4285F4", tag: "Browser", desc: "Android browser extension support.", link: "https://github.com/kiwibrowser/src.next" }
-        ];
+    { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "Search Engine", desc: "Core Privacy-Search Engine.", link: "https://duckduckgo.com" },
+    { name: "Vivaldi", slug: "vivaldi", color: "#EF3939", tag: "Browser", desc: "Power-user Browser.", link: "https://vivaldi.com" },
+    { name: "OBS Studio", slug: "obsstudio", color: "#FFFFFF", tag: "Screen Recorder", desc: "Broadcasting.", link: "https://obsproject.com/" },
+    { name: "Arch Linux", slug: "archlinux", color: "#1793D1", tag: "Archinstaller", desc: "Archinstall.", link: "https://archlinux.org" },
+    { name: "Telegram", slug: "telegram", color: "#26A5E4", tag: "Messaging Application", desc: "Secure Messaging Application.", link: "https://telegram.org" },
+    { name: "Mastodon", slug: "mastodon", color: "#6364FF", tag: "Social Media Network", desc: "Decentralized Social Networks.", link: "https://joinmastodon.org/ku" },
+    { name: "Roundcube", slug: "roundcube", color: "#37BEFF", tag: "Email Client", desc: "Webmail Client.", link: "https://roundcube.net/" },
+    { name: "OpenMap", slug: "openstreetmap", color: "#7EBC6F", tag: "Maps", desc: "Map Viewing Application.", link: "https://www.openstreetmap.org" },
+    { name: "Nuclear", slug: "nuclear", color: "#FA243C", tag: "Music Player", desc: "Music Streaming Program.", link: "https://nuclearplayer.com/" },
+    { name: "Harmonoid", slug: "harmonoid", color: "#00B2FF", tag: "Music Player", desc: "Material Design Music Player.", link: "https://harmonoid.com/" },
+    { name: "Whoogle", slug: "google", color: "#4285F4", tag: "Search Engine", desc: "Self-hosted Privacy Search.", link: "https://pypi.org/project/whoogle-search/" },
+    { name: "Kiwi Browser", slug: "kiwibrowser", color: "#47BD61", tag: "Browser", desc: "Android Browser Extension Support.", link: "https://github.com/kiwibrowser/src.next" },
+    { name: "Noctalia", slug: "wayland", color: "#00CCFF", tag: "Wayland Shell", desc: "Clean and Minimal Wayland desktop shell.", link: "https://docs.noctalia.dev/" },
+    { name: "ImageGlass", slug: "imageglass", color: "#2EADFF", tag: "Image Viewer", desc: "Lean, versatile viewer.", link: "https://imageglass.org/" },
+    { name: "qView", slug: "quicklook", color: "#40C4FF", tag: "Image Viewer", desc: "Pure, borderless image viewer.", link: "https://interversehq.com/qview/" },
+    { name: "Quick Picture Viewer", slug: "windows", color: "#0078D4", tag: "Image Viewer", desc: "Lightweight, versatile Windows viewer.", link: "https://moduleart.github.io/quickpictureviewer" },
+    { name: "SongTube", slug: "youtube", color: "#FF0000", tag: "Media Downloader", desc: "Beautiful and fast Youtube Client.", link: "https://t.me/songtubechannel" },
+    { name: "Retro Music Player", slug: "android", color: "#3DDC84", tag: "Music Player", desc: "Elegant Android music player.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
+    { name: "UntrackMe", slug: "fdroid", color: "#1976D2", tag: "Link Converter", desc: "Privacy-focused link switcher.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
+    { name: "Dopamine", slug: "windows", color: "#00A2ED", tag: "Music Player", desc: "Polished, effortless audio.", link: "https://digimezzo.github.io/site/" }
+];
 
         const movieData = [
             { name: "EL CUERPO", year: "2012", genre: "MYSTERY", score: "7.6", desc: "Piştî mirina wê, bedena jina Alex, ji morgê winda dibe.", link: "https://tirsik.net/film/749?tab=agahi", img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fresizing.flixster.com%2F-XZAfHZM39UwaGJIFWKAE8fS0ak%3D%2Fv3%2Ft%2Fassets%2Fp9629845_p_v8_ab.jpg&f=1&nofb=1&ipt=a81d2265151f299ac1bc528d9eacac19f0975e2cfdb74a76f5fb0ca36a2ea8d0" },
