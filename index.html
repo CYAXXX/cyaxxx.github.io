@@ -88,7 +88,7 @@
                     <div class="p-2 bg-[#278e43]/10 rounded-lg border border-[#278e43]/20 group-hover:bg-[#278e43] group-hover:text-white transition-all duration-300">
                         <i data-lucide="languages" class="w-5 h-5 text-[#278e43] group-hover:text-white transition-colors"></i>
                     </div>
-                    <span class="text-xl font-bold tracking-tight">CYA<span class="text-[#278e43]">XXX</span></span>
+                    <!-- Text Removed -->
                 </a>
             </div>
 
@@ -98,6 +98,7 @@
                 <a href="#keyboard" class="hover:text-[var(--brand-primary)] transition-colors">Keyboard</a>
                 <a href="#movies" class="hover:text-[var(--brand-primary)] transition-colors">Subtitles</a>
                 <a href="#dictionary" class="hover:text-[var(--brand-primary)] transition-colors">Dictionary</a>
+                <a href="#contact" class="hover:text-[var(--brand-primary)] transition-colors">Contact</a>
             </div>
 
             <!-- Right: Toggle & Mobile Menu -->
@@ -119,14 +120,7 @@
                 <a href="#keyboard" onclick="MobileMenu.close()" class="text-lg font-medium">Keyboard</a>
                 <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Subtitles</a>
                 <a href="#dictionary" onclick="MobileMenu.close()" class="text-lg font-medium">Dictionary</a>
-            </div>
-            <div class="flex gap-4 pt-4 border-t border-[var(--border-color)]">
-                <a href="mailto:cyaxxx@vivaldi.net" class="flex items-center gap-2 text-sm font-medium text-[var(--text-secondary)]">
-                    <i data-lucide="mail" class="w-5 h-5"></i> Contact
-                </a>
-                <a href="https://github.com/CYAXXX" target="_blank" class="flex items-center gap-2 text-sm font-medium text-[var(--text-secondary)]">
-                    <i data-lucide="github" class="w-5 h-5"></i> GitHub
-                </a>
+                <a href="#contact" onclick="MobileMenu.close()" class="text-lg font-medium">Contact</a>
             </div>
         </div>
     </nav>
@@ -223,7 +217,7 @@
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <!-- Removed Visit Website Button -->
                 <!-- Updated Translate Now Button to Green -->
-                <a href="https://ferheng-pmfg896bp0j0.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent">
+                <a href="https://ferheng.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent">
                     <i data-lucide="languages" class="w-5 h-5"></i> Translate Now
                 </a>
             </div>
@@ -259,17 +253,24 @@
     <footer id="contact" class="py-16 px-6 bg-[var(--bg-surface)] text-center border-t border-[var(--border-color)]">
         <div class="flex flex-col items-center justify-center gap-8">
             <div class="flex items-center gap-3">
-                 <div class="p-2 bg-[#278e43]/10 rounded-lg border border-[#278e43]/20">
-                    <i data-lucide="languages" class="w-5 h-5 text-[#278e43]"></i>
                 </div>
-                <span class="text-xl font-bold tracking-tight">CYA<span class="text-[#278e43]">XXX</span></span>
+                <!-- Text Removed for footer logo as well if consistent with navbar, but user said 'navbar', I'll keep footer branding for clarity unless requested.
+                     Wait, user said 'navbar remove the cyaxxx'. I will keep footer text 'CYAXXX' as it serves as the footer identity. -->
             </div>
            
-            <div class="flex gap-6">
+            <div class="flex flex-wrap justify-center gap-6">
                 <a href="https://github.com/CYAXXX" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-[#278e43] transition-all group">
                     <i data-lucide="github" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                     <span class="font-medium">GitHub</span>
                 </a>
+               
+                <!-- Donation/Sponsor Button Added Here -->
+                <a href="https://github.com/sponsors/CYAXXX" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-red-500 hover:text-red-500 transition-all group">
+                    <i data-lucide="heart" class="w-5 h-5 group-hover:scale-110 transition-transform fill-transparent group-hover:fill-current"></i>
+                    <span class="font-medium">Sponsor</span>
+                </a>
+
+                <!-- This contact link remains mailto as it's an action button -->
                 <a href="mailto:cyaxxx@vivaldi.net" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-[#278e43] transition-all group">
                     <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                     <span class="font-medium">Contact</span>
@@ -277,7 +278,7 @@
             </div>
 
             <div class="text-[10px] text-[var(--text-secondary)] font-mono uppercase tracking-[0.2em] mt-8">
-                &copy; 2024 CYAXXX. Open Source.
+                &copy; 2026 CYAXXX. All rights reserved.
             </div>
         </div>
     </footer>
