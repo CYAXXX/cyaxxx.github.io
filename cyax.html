@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ku" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYAXXX | Software Localization Specialist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        :root {
+            --bg-primary: #ffffff;
+            --bg-surface: #f3f4f6;
+            --bg-surface-highlight: #e5e7eb;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --border-color: rgba(0, 0, 0, 0.1);
+            --nav-bg: rgba(255, 255, 255, 0.8);
+        }
+
+        .dark {
+            --bg-primary: #050505;
+            --bg-surface: #121212;
+            --bg-surface-highlight: #1E1E1E;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --nav-bg: rgba(5, 5, 5, 0.8);
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .glass-nav {
+            background: var(--nav-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .mesh-bg {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: var(--bg-primary); }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-violet-500 rounded-lg flex items-center justify-center text-white shadow-lg">
+                    <span class="font-mono font-bold text-xs">CY</span>
+                </div>
+                <span>CYAXXX</span>
+            </a>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[var(--text-secondary)]">
+                    <a href="#work" class="hover:text-[var(--text-primary)] transition-colors">Projects</a>
+                    <a href="#movies" class="hover:text-[var(--text-primary)] transition-colors">Subtitles</a>
+                    <a href="#dictionary" class="hover:text-[var(--text-primary)] transition-colors">Dictionary</a>
+                </div>
+
+                <button onclick="ThemeManager.toggle()" class="p-2 rounded-full hover:bg-[var(--bg-surface-highlight)] transition-colors border border-transparent hover:border-[var(--border-color)]">
+                    <i id="theme-icon-sun" data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    <i id="theme-icon-moon" data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                </button>
+
+                <div class="hidden md:flex gap-2">
+                    <a href="mailto:cyaxxx@vivaldi.net" class="p-2 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] rounded-full border border-[var(--border-color)] group transition-all">
+                        <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110"></i>
+                    </a>
+                    <a href="https://github.com/CYAXXX" target="_blank" class="p-2 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] rounded-full border border-[var(--border-color)] group transition-all">
+                        <i data-lucide="github" class="w-5 h-5 group-hover:scale-110"></i>
+                    </a>
+                </div>
+
+                <button class="md:hidden" onclick="MobileMenu.toggle()">
+                    <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] p-6 flex flex-col gap-4 shadow-2xl">
+            <a href="#work" onclick="MobileMenu.close()" class="text-lg font-medium">Projects</a>
+            <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Subtitles</a>
+            <a href="#dictionary" onclick="MobileMenu.close()" class="text-lg font-medium">Dictionary</a>
+        </div>
+    </nav>
+
+    <header class="relative pt-48 pb-32 overflow-hidden mesh-bg">
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--bg-surface)] border border-[var(--border-color)] text-xs font-mono text-blue-500 mb-8 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                Active in Open Source
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[1.1] mb-8">
+                Software that speaks <br />
+                <span class="text-gradient">Kurdish.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed mb-10">
+                Engineering bridges between global software and the Kurdish (Kurmanji) community through precise localization and open-source contributions.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+                <a href="#work" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 shadow-xl shadow-blue-500/20 flex items-center justify-center gap-2">
+                    Selected Projects
+                </a>
+                <a href="#dictionary" class="w-full sm:w-auto px-8 py-4 bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-highlight)] font-semibold rounded-xl transition-colors border border-[var(--border-color)] shadow-sm">
+                    Kurdish Dictionary
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="border-y border-[var(--border-color)] bg-[var(--bg-surface)]/50">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <p class="text-center text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-[0.3em] mb-10">Core Technical Contributions</p>
+            <div id="logo-marquee" class="flex flex-wrap justify-center gap-10 md:gap-20 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                </div>
+        </div>
+    </div>
+
+    <section id="work" class="py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Localization Works</h2>
+                <p class="text-[var(--text-secondary)]">A curated list of global software suites I have translated and adapted for the Kurdish language.</p>
+            </div>
+            <div id="work-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                </div>
+        </div>
+    </section>
+
+    <section id="movies" class="py-32 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">Cinema Subtitles</h2>
+                    <p class="text-[var(--text-secondary)]">Bridging cultures through professional Kurdish subtitles.</p>
+                </div>
+                <div class="flex gap-3">
+                    <span class="px-4 py-1.5 bg-red-500/10 text-red-500 border border-red-500/20 rounded-lg text-xs font-mono font-bold">SRT</span>
+                    <span class="px-4 py-1.5 bg-blue-500/10 text-blue-500 border border-blue-500/20 rounded-lg text-xs font-mono font-bold">ASS</span>
+                </div>
+            </div>
+            <div id="movie-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <section id="dictionary" class="py-40 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.05] pointer-events-none" style="background-image: radial-gradient(var(--text-primary) 1px, transparent 1px); background-size: 32px 32px;"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="inline-block p-5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-color)] mb-10 shadow-xl">
+                <i data-lucide="book-open" class="w-10 h-10 text-blue-500"></i>
+            </div>
+            <h2 class="text-4xl md:text-7xl font-bold tracking-tight mb-8">
+                The Digital <span class="text-gradient">Dictionary</span>
+            </h2>
+            <p class="text-xl text-[var(--text-secondary)] mb-12 max-w-2xl mx-auto">
+                Building a comprehensive terminology database for technical Kurdish translation.
+            </p>
+            <div class="text-sm font-mono text-blue-500 font-bold uppercase tracking-widest animate-pulse">Platform Launching Soon</div>
+        </div>
+    </section>
+
+    <script>
+        const workData = [
+            { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "PRIVACY", desc: "Core privacy-search localization.", link: "https://duckduckgo.com" },
+            { name: "Vivaldi", slug: "vivaldi", color: "#EF3939", tag: "BROWSER", desc: "Power-user browser UI modules.", link: "https://vivaldi.com" },
+            { name: "OBS Studio", slug: "obsstudio", color: "#FFFFFF", tag: "MEDIA", desc: "Broadcasting engine Kurdish pack.", link: "https://obsproject.com/" },
+            { name: "Arch Linux", slug: "archlinux", color: "#1793D1", tag: "SYSTEM", desc: "Archinstall & CLI localization.", link: "https://archlinux.org" },
+            { name: "Telegram", slug: "telegram", color: "#26A5E4", tag: "SOCIAL", desc: "Secure messaging language sync.", link: "https://telegram.org" },
+            { name: "Mastodon", slug: "mastodon", color: "#6364FF", tag: "SOCIAL", desc: "Decentralized UI localization.", link: "https://joinmastodon.org/ku" },
+            { name: "Roundcube", slug: "roundcube", color: "#37BEFF", tag: "EMAIL", desc: "Webmail interface localization.", link: "https://roundcube.net/" },
+            { name: "OpenMap", slug: "openstreetmap", color: "#7EBC6F", tag: "MAPS", desc: "Map viewing application.", link: "https://www.openstreetmap.org" },
+            { name: "Nuclear", slug: "applemusic", color: "#FA243C", tag: "MEDIA", desc: "Music streaming program.", link: "https://nuclearplayer.com/" },
+            { name: "Harmonoid", slug: "flutter", color: "#02569B", tag: "MEDIA", desc: "Material Design music player.", link: "https://harmonoid.com/" },
+            { name: "Whoogle", slug: "google", color: "#4285F4", tag: "PRIVACY", desc: "Self-hosted privacy search.", link: "https://pypi.org/project/whoogle-search/" },
+            { name: "Kiwi Browser", slug: "googlechrome", color: "#4285F4", tag: "BROWSER", desc: "Android browser extension support.", link: "https://github.com/kiwibrowser/src.next" }
+        ];
+
+        const movieData = [
+            { name: "EL CUERPO", year: "2012", genre: "MYSTERY", score: "7.6", desc: "Piştî mirina wê, bedena jina Alex, ji morgê winda dibe.", link: "https://tirsik.net/film/749?tab=agahi", img: "https://images.unsplash.com/photo-1596706915606-25f0cb18cb3e?q=80&w=1974&auto=format&fit=crop" },
+            { name: "BENEATH US", year: "2019", genre: "HORROR", score: "5.2", desc: "Xewna amerîkî, ji bo komeke xebatkarên penaber vediguhere xewnereşkê.", link: "https://tirsik.net/film/769", img: "https://images.unsplash.com/photo-1595878715977-2e8f8df18ea8?q=80&w=1974&auto=format&fit=crop" },
+            { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort, ji bo dizehî bikin dikevin mala zilamek kor ku leşkerek kevin e.", link: "https://tirsik.net/film/680", img: "https://images.unsplash.com/photo-1505548689957-bf530eb7b049?q=80&w=2062&auto=format&fit=crop" }
+        ];
+
+        const ThemeManager = {
+            init() {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'light') document.documentElement.classList.remove('dark');
+                this.updateIcons();
+            },
+            toggle() {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                this.updateIcons();
+                DataManager.renderMarquee();
+            },
+            updateIcons() {
+                lucide.createIcons();
+            }
+        };
+
+        const MobileMenu = {
+            toggle() {
+                const menu = document.getElementById('mobile-menu');
+                const icon = document.getElementById('menu-icon');
+                const isHidden = menu.classList.toggle('hidden');
+                icon.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+                lucide.createIcons();
+            },
+            close() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+                document.getElementById('menu-icon').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            }
+        };
+
+        const DataManager = {
+            renderProjects() {
+                const container = document.getElementById('work-grid');
+                container.innerHTML = workData.map(item => `
+                    <a href="${item.link}" target="_blank" class="p-8 rounded-2xl flex flex-col h-full group relative overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-[var(--border-color)] bg-[var(--bg-surface)]">
+                        <div class="flex items-start justify-between mb-6 relative z-10">
+                            <div class="w-14 h-14 rounded-xl bg-[var(--bg-surface-highlight)] border border-[var(--border-color)] flex items-center justify-center">
+                                <img src="https://cdn.simpleicons.org/${item.slug}/${item.color.replace('#','')}" class="w-7 h-7" alt="${item.name}">
+                            </div>
+                            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-secondary)] bg-[var(--bg-surface-highlight)] px-3 py-1 rounded-full border border-[var(--border-color)]">${item.tag}</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-blue-500 transition-colors relative z-10">${item.name}</h3>
+                        <p class="text-[var(--text-secondary)] leading-relaxed relative z-10">${item.desc}</p>
+                        <div class="absolute -bottom-16 -right-16 w-40 h-40 opacity-0 group-hover:opacity-10 blur-[60px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
+                    </a>
+                `).join('');
+            },
+            renderMovies() {
+                const container = document.getElementById('movie-grid');
+                container.innerHTML = movieData.map(movie => `
+                    <a href="${movie.link}" target="_blank" class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-[var(--bg-surface)] border border-[var(--border-color)] shadow-lg">
+                        <img src="${movie.img}" class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                            <div class="transform translate-y-6 group-hover:translate-y-0 transition-all duration-500">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="text-xs font-black text-white bg-red-600 px-2.5 py-1 rounded-md shadow-lg">${movie.score}</span>
+                                    <span class="text-[10px] text-gray-200 font-mono uppercase tracking-widest">${movie.genre}</span>
+                                </div>
+                                <h3 class="text-3xl font-black uppercase italic mb-3 leading-none text-white tracking-tighter">${movie.name}</h3>
+                                <p class="text-sm text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-500">${movie.desc}</p>
+                            </div>
+                        </div>
+                    </a>
+                `).join('');
+            },
+            renderMarquee() {
+                const container = document.getElementById('logo-marquee');
+                const isDark = document.documentElement.classList.contains('dark');
+                const logos = [
+                    { slug: 'duckduckgo', invert: false },
+                    { slug: 'vivaldi', invert: false },
+                    { slug: 'obsstudio', invert: true },
+                    { slug: 'archlinux', invert: true },
+                    { slug: 'telegram', invert: false },
+                    { slug: 'mastodon', invert: false }
+                ];
+                container.innerHTML = logos.map(l => `
+                    <img src="https://cdn.simpleicons.org/${l.slug}" 
+                         class="h-10 w-auto transition-transform hover:scale-110 duration-300 ${l.invert && isDark ? 'invert' : ''}" 
+                         alt="${l.slug}">
+                `).join('');
+            }
+        };
+
+        // Initialize App
+        ThemeManager.init();
+        DataManager.renderProjects();
+        DataManager.renderMovies();
+        DataManager.renderMarquee();
+        lucide.createIcons();
+    </script>
+</body>
+</html>
