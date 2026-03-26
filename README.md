@@ -1,4 +1,4 @@
-# 🌍 Kurdish (Kurmanji) Localization Hub
+# Kurdish (Kurmanji) Localization Hub
 **Bridging the gap between global software and the Kurdish community.**
 
 [![Status](https://img.shields.io/badge/Status-Active-278e43)](#) 
