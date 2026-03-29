@@ -37,8 +37,9 @@ chmod +x install.sh
 <summary>🌐 Browsers & Search Engines</summary>
 
 * **Vivaldi** — Full UI localization.
+* **LibreWolf** — A custom version of Firefox, focused on privacy, security and freedom.s.
 * **DuckDuckGo** — Search interface.
-* **Kiwi Browser** — Android browser strings.
+* **Kiwi Browser** — Android browser .
 * **Whoogle** — Privacy search results.
 </details>
 
