@@ -47,6 +47,8 @@
 </div>
 
 Below is the unified deployment index mapping the target global application frameworks systematically localized into Kurdish (Kurmanji).
+
+```text
 [ ENV: PRIVACY & SEARCH ]
 ├── 🔍 DuckDuckGo ............ Mainstream privacy-hardened search routing
 ├── 🛡️ Whoogle ............... Tracker-free metadata stripping proxy
@@ -77,22 +79,3 @@ Below is the unified deployment index mapping the target global application fram
 [ ENV: MEDIA & GRAPHICS ENGINES ]
 ├── 🎵 Audio Execution ....... Nuclear, Dopamine, Harmonoid, Retro Music, SongTube
 └── 🖼️ Asset Pipelines ....... ImageGlass, qView, Quick Picture Viewer
-
-
-<br>
-
----
-
-<br>
-
-<div align="center">
-
-## ✦ TECH STACK & SYSTEM MECHANICS ✦
-
-</div>
-
-```txt
-UI CORE      | Tailwind CSS / Semantic Utility Architecture
-TYPOGRAPHY   | Inter (Sans) & JetBrains Mono (Terminal)
-PERSISTENCE  | LocalStorage Dark-Mode Synchronization Matrix
-PIPELINE     | Pure Asynchronous HTML5 / JavaScript Logic Engine
