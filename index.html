@@ -1,96 +1,311 @@
-/* Core Section Layout */
-.hero-section {
-  text-align: center;
-  padding: 5.5rem 1.5rem 2rem 1.5rem;
-  max-width: 850px;
-  margin: 0 auto;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Kurdization Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* --------------------------------------------------
+       1. GLOBAL STYLES & RESET
+    -------------------------------------------------- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Styled for "A Kurdization Project" capsule */
-.project-tag {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #059669; /* Sharp emerald green */
-  background-color: #ecfdf5; /* Soft green tint */
-  padding: 0.4rem 0.9rem;
-  border-radius: 9999px;
-  margin-bottom: 1.75rem;
-}
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc; /* Sleek, premium off-white background */
+      color: #0f172a; /* Slate dark instead of harsh pure black */
+      line-height: 1.5;
+      padding: 0;
+    }
 
-/* Big, bold modern typography stack */
-.hero-title {
-  font-size: clamp(2.5rem, 5.5vw, 4rem);
-  font-weight: 800;
-  color: #0f172a; /* Premium deep slate dark */
-  letter-spacing: -0.035em;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
 
-.highlight-green {
-  color: #10b981; /* Accent theme green */
-}
+    /* --------------------------------------------------
+       2. MODERN HERO SECTION
+    -------------------------------------------------- */
+    .hero-section {
+      text-align: center;
+      padding: 5.5rem 0 2rem 0;
+      max-width: 850px;
+      margin: 0 auto;
+    }
 
-/* Elegant line height for the text narrative */
-.hero-subtitle {
-  font-size: clamp(1.05rem, 2vw, 1.2rem);
-  line-height: 1.65;
-  color: #475569;
-  max-width: 72ch;
-  margin: 0 auto 3rem auto;
-}
+    /* "A Kurdization Project" Tag Capsule */
+    .project-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #059669; /* Sharp emerald green text */
+      background-color: #ecfdf5; /* Soft green tint background */
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      margin-bottom: 1.75rem;
+    }
 
-.highlight-text {
-  font-weight: 700;
-  color: #0f172a;
-}
+    /* Massive High-Impact Title */
+    .hero-title {
+      font-size: clamp(2.5rem, 5.5vw, 4rem);
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
 
-/* --- LOGO BAR STYLING --- */
-.contributor-logobar {
-  margin-top: 2.5rem;
-  padding: 1.5rem 0;
-}
+    .highlight-green {
+      color: #10b981; /* Accent theme green matching your original site */
+    }
 
-/* Small, tracked out subhead matching your screenshot style */
-.logobar-title {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em; /* Gives it that spacious look */
-  color: #64748b;
-  margin-bottom: 1.5rem;
-}
+    /* Concise narrative text replacing old blocks */
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      line-height: 1.65;
+      color: #475569; /* Soft gray for comfortable reading length */
+      max-width: 72ch;
+      margin: 0 auto;
+    }
 
-/* Flexible row that handles mobile nicely */
-.logo-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows wrapping on small phone screens */
-  gap: 2.5rem; /* Generous gap between brand marks */
-  opacity: 0.75; /* Softens icons so they look clean and uniform */
-  transition: opacity 0.2s ease;
-}
+    .highlight-text {
+      font-weight: 700;
+      color: #0f172a;
+    }
 
-.logo-row:hover {
-  opacity: 1; /* Slight pop effect when interacting */
-}
+    /* --------------------------------------------------
+       3. PROUD CONTRIBUTOR LOGO BAR
+    -------------------------------------------------- */
+    .contributor-logobar {
+      margin-top: 3.5rem;
+      padding: 1rem 0;
+    }
 
-/* Enforce uniform sizing for your logo svgs/pngs */
-.brand-logo {
-  height: 32px; /* Uniform height constraint */
-  width: auto;
-  object-fit: contain;
-}
+    .logobar-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em; /* Spacious, clean tech typography tracking */
+      color: #64748b;
+      margin-bottom: 1.5rem;
+    }
 
-/* Minimalist border element separating intro from your card grid */
-.section-divider {
-  max-width: 120px;
-  height: 2px;
-  background-color: #e2e8f0;
-  margin: 4rem auto 1rem auto;
-}
+    /* Flexible container handling logo flow across device screens */
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      opacity: 0.75;
+      transition: opacity 0.2s ease;
+    }
+
+    .logo-row:hover {
+      opacity: 1; /* Slight highlight opacity when a user hovers over the ecosystem */
+    }
+
+    /* Placeholder icons styled clean. Replace src paths with your actual asset files */
+    .brand-icon-mock {
+      width: 36px;
+      height: 36px;
+      background-color: #cbd5e1;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: bold;
+      color: #475569;
+    }
+
+    /* Elegant modern horizontal divider line */
+    .section-divider {
+      max-width: 120px;
+      height: 2px;
+      background-color: #e2e8f0;
+      margin: 4.5rem auto 4.5rem auto;
+    }
+
+    /* --------------------------------------------------
+       4. RESPONSIVE PROJECT CARD GRID
+    -------------------------------------------------- */
+    .grid-section {
+      padding-bottom: 5rem;
+    }
+
+    /* Fluid layout structure using CSS grid auto-fit */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Premium Minimal Card Styling */
+    .project-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.05);
+      border-color: #10b981; /* Subtle active glow using theme color */
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+    }
+
+    .app-icon {
+      width: 44px;
+      height: 44px;
+      background-color: #f1f5f9;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .category-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      background-color: #f1f5f9;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header class="hero-section">
+      <span class="project-tag">A Kurdization Project</span>
+      
+      <h1 class="hero-title">
+        Software that speaks <span class="highlight-green">Kurmanji.</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Bringing digital sovereignty to the Kurdish language. I am proud to contribute 
+        to the global open-source ecosystem by systematically translating over 
+        <span class="highlight-text">200,000 words</span>—natively integrating 
+        Kurmanji into mainstream privacy tools, browsers, operating systems, and decentralized networks.
+      </p>
+
+      <div class="contributor-logobar">
+        <p class="logobar-title">Proud Contributor to Global Projects</p>
+        <div class="logo-row">
+          <div class="brand-icon-mock">DDG</div>
+          <div class="brand-icon-mock">VIV</div>
+          <div class="brand-icon-mock">OBS</div>
+          <div class="brand-icon-mock">ARCH</div>
+          <div class="brand-icon-mock">MAST</div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+    </header>
+
+    <main class="grid-section">
+      <div class="project-grid">
+        
+        <article class="project-card">
+          <div class="card-header">
+            <div class="app-icon">🦆</div>
+            <span class="category-badge">Search Engine</span>
+          </div>
+          <h2 class="card-title">DuckDuckGo</h2>
+          <p class="card-description">Core Privacy-Search Engine configuration and full Kurmanji integration lines.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <div class="app-icon">🔴</div>
+            <span class="category-badge">Browser</span>
+          </div>
+          <h2 class="card-title">Vivaldi</h2>
+          <p class="card-description">Power-user browser environment translation matching intricate configuration settings.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <div class="app-icon">🐺</div>
+            <span class="category-badge">Browser</span>
+          </div>
+          <h2 class="card-title">Librewolf</h2>
+          <p class="card-description">A custom version of Firefox, focused purely on privacy, security, and digital user freedom.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <div class="app-icon">🎥</div>
+            <span class="category-badge">Broadcasting</span>
+          </div>
+          <h2 class="card-title">OBS Studio</h2>
+          <p class="card-description">Professional screen recording and live broadcasting layout localization interface maps.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <div class="app-icon">📐</div>
+            <span class="category-badge">Installer</span>
+          </div>
+          <h2 class="card-title">Archinstall</h2>
+          <p class="card-description">Bringing simple, keyboard-driven OS installations directly to native Kurmanji users.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <div class="app-icon">✈️</div>
+            <span class="category-badge">Chat App</span>
+          </div>
+          <h2 class="card-title">Telegram</h2>
+          <p class="card-description">Secure, real-time global cloud communication environment strings localized completely.</p>
+        </article>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
