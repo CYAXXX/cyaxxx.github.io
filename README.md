@@ -1,52 +1,98 @@
 <div align="center">
+  <img src="your-custom-header.png" alt="Cyaxxx Banner" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+  
+  # CYAXXX PLATFORM NODE
+  
+  > ### RE-ENGINEERING DIGITAL SOVEREIGNTY
 
-  # cyaxxx.github.io
-
-  `SOFTWARE THAT SPEAKS KURDISH`
-
-  [Live Website](https://cyaxxx.github.io/) | [License: MIT](LICENSE) | [Status: Active]
+  [![Deployment: Active](https://img.shields.io/badge/DEPLOYMENT-ACTIVE-cyan?style=for-the-badge&logo=github&logoColor=black)](https://cyaxxx.github.io/) • [![MIT License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
   ---
 </div>
 
-### Core Mission
-Engineering digital bridges between global technology solutions and the Kurdish community through systematic, high-precision localization and open-source contributions. 
+<br>
 
-This repository hosts the source code for the central project platform, indexing software localization layers across privacy tools, browsers, system setups, and translation frameworks.
+<div align="center">
 
-### Core Repositories & Deployments
+## ✦ CORE INITIATIVES ✦
 
-* **Native Kurdish Keyboard Layout**
-  A native XKB system keyboard architecture built for Linux distributions, tailored natively to fluidly support the Kurmanji dialect.
-  * **Source:** [GitHub | KurdishKurmanjiKeyboard](https://github.com/Zinaro/KurdishKurmanjiKeyboard)
-  * **Platform:** Linux Kernel Compatible
+</div>
 
-* **Ferhenga Dijîtal (Digital Technical Dictionary)**
-  An open database compiling and tracking tech jargon to structure clean terminologies.
-  * **Source:** [ferheng.deno.dev](https://ferheng.deno.dev/)
-  * **Stack:** Deno, Edge Runtime
+<div align="left" style="background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; border: 1px solid rgba(0,255,255,0.2);">
+  
+  #### 01 / NATIVE LINUX KERNEL INPUT SUPPORT
+  * 🖥 **Project:** XKB System Keyboard Architecture
+  * 🎯 **Target:** Linux Distributions (X11 / Wayland Compositors)
+  * 🛠 **Integration:** Native execution wrapper optimized for the Kurmanji dialect
+  * 🔗 **Source:** [GitHub | KurdishKurmanjiKeyboard](https://github.com/Zinaro/KurdishKurmanjiKeyboard)
 
----
+  #### 02 / FERHENGA DIJÎTAL
+  * 📖 **Project:** Decentralized Open Technical Dictionary
+  * 🌐 **Target:** Standardization of computing and localization terminology
+  * 🧱 **Stack:** Deno Engine, Edge Runtime Deployment
+  * 🔗 **Production:** [ferheng.deno.dev](https://ferheng.deno.dev/)
 
-### Integrated Ecosystem Localization
+</div>
 
-The complete tracking map of target application frameworks fully localized into Kurdish, organized by environment:
-
-| Layer | Target Platforms |
-| :--- | :--- |
-| **Privacy & Search** | DuckDuckGo, Whoogle, UntrackMe |
-| **Browsers** | Vivaldi, LibreWolf, Kiwi Browser |
-| **Base System & Utilities** | Archinstall, OBS Studio, Ly Display Manager, mLauncher, Noctalia |
-| **Comms & Networks** | Telegram, Mastodon, Codeberg, Roundcube |
-| **Geospatial & Cinema** | OpenStreetMap, Tirsik Cinema Subtitles |
-| **Audio & Graphics** | Nuclear, Dopamine, Harmonoid, Retro Music, SongTube, ImageGlass, qView, Quick Picture |
+<br>
 
 ---
 
-### Build Architecture
+<br>
+
+<div align="center">
+
+## ✦ INTEGRATED LOCALIZATION MATRIX ✦
+
+</div>
+
+Below is the unified deployment index mapping the target global application frameworks systematically localized into Kurdish (Kurmanji).
+[ ENV: PRIVACY & SEARCH ]
+├── 🔍 DuckDuckGo ............ Mainstream privacy-hardened search routing
+├── 🛡️ Whoogle ............... Tracker-free metadata stripping proxy
+└── 🔄 UntrackMe ............. Automated secure background mirror routing
+
+[ ENV: BROWSER INFRASTRUCTURE ]
+├── 🧭 Vivaldi ............... Power-user performance layout environment
+├── 🦊 LibreWolf ............. Community-driven privacy-hardened core
+└── 📱 Kiwi Browser .......... Mobile Chromium layer with extension pipelines
+
+[ ENV: BASE SYSTEM & INTEGRATION ]
+├── 🐧 Archinstall ........... Streamlined installation engine for Arch Linux
+├── 🎥 OBS Studio ............ Open broadcasting and media rendering matrix
+├── 🔐 Ly Display Manager .... Matrix-style terminal login controller
+├── 🐚 Noctalia .............. Lightweight Wayland environment system shell
+└── 🚀 mLauncher ............. Minimalist keyboard-driven mobile environment
+
+[ ENV: COMMUNICATIONS & SOCIAL DECENTRALIZATION ]
+├── 💬 Telegram .............. Secure cloud-based communication platform
+├── 🐘 Mastodon .............. Federated open social networking protocol
+├── 🐙 Codeberg .............. Non-profit FOSS Git version control hosting
+└── 📧 Roundcube ............. Browser-based IMAP webmail client protocol
+
+[ ENV: GEOSPATIAL & CINEMA PIPELINES ]
+├── 🗺️ OpenStreetMap ......... Collaborative open world mapping engine
+└── 🎬 Tirsik Subtitles ...... Native cinema translation database layer
+
+[ ENV: MEDIA & GRAPHICS ENGINES ]
+├── 🎵 Audio Execution ....... Nuclear, Dopamine, Harmonoid, Retro Music, SongTube
+└── 🖼️ Asset Pipelines ....... ImageGlass, qView, Quick Picture Viewer
+
+
+<br>
+
+---
+
+<br>
+
+<div align="center">
+
+## ✦ TECH STACK & SYSTEM MECHANICS ✦
+
+</div>
 
 ```txt
-UI Framework | Tailwind CSS Utilities
-Typography   | Inter & JetBrains Mono Frameworks
-Mechanics    | Synchronous Dark-Mode Persistence (CSS Variables)
-Pipeline     | Pure HTML5 / JavaScript Async Pipeline
+UI CORE      | Tailwind CSS / Semantic Utility Architecture
+TYPOGRAPHY   | Inter (Sans) & JetBrains Mono (Terminal)
+PERSISTENCE  | LocalStorage Dark-Mode Synchronization Matrix
+PIPELINE     | Pure Asynchronous HTML5 / JavaScript Logic Engine
