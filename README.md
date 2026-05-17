@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="your-custom-header.png" alt="Cyaxxx Banner" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
   
   # CYAXXX PLATFORM NODE
   
@@ -18,21 +17,17 @@
 
 </div>
 
-<div align="left" style="background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; border: 1px solid rgba(0,255,255,0.2);">
-  
-  #### 01 / NATIVE LINUX KERNEL INPUT SUPPORT
-  * 🖥 **Project:** XKB System Keyboard Architecture
-  * 🎯 **Target:** Linux Distributions (X11 / Wayland Compositors)
-  * 🛠 **Integration:** Native execution wrapper optimized for the Kurmanji dialect
-  * 🔗 **Source:** [GitHub | KurdishKurmanjiKeyboard](https://github.com/Zinaro/KurdishKurmanjiKeyboard)
+#### 01 / NATIVE LINUX KERNEL INPUT SUPPORT
+* 🖥 **Project:** XKB System Keyboard Architecture
+* 🎯 **Target:** Linux Distributions (X11 / Wayland Compositors)
+* 🛠 **Integration:** Native execution wrapper optimized for the Kurmanji dialect
+* 🔗 **Source:** [GitHub | KurdishKurmanjiKeyboard](https://github.com/Zinaro/KurdishKurmanjiKeyboard)
 
-  #### 02 / FERHENGA DIJÎTAL
-  * 📖 **Project:** Decentralized Open Technical Dictionary
-  * 🌐 **Target:** Standardization of computing and localization terminology
-  * 🧱 **Stack:** Deno Engine, Edge Runtime Deployment
-  * 🔗 **Production:** [ferheng.deno.dev](https://ferheng.deno.dev/)
-
-</div>
+#### 02 / FERHENGA DIJÎTAL
+* 📖 **Project:** Decentralized Open Technical Dictionary
+* 🌐 **Target:** Standardization of computing and localization terminology
+* 🧱 **Stack:** Deno Engine, Edge Runtime Deployment
+* 🔗 **Production:** [ferheng.deno.dev](https://ferheng.deno.dev/)
 
 <br>
 
