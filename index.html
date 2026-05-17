@@ -90,31 +90,10 @@
                             <defs>
                                 <polygon id='nav-r' points='0,-6.5 -0.55,-3 0.55,-3' fill='%23FFC107'/>
                             </defs>
-                            <rect x='1.5' y='1.5' width='29' height='29' rx='6' fill='none' stroke='%23278e43' stroke-width='2.5'/>
-                            <path d='M7.5,11.5 L13.5,16 L7.5,20.5' fill='none' stroke='%23E53935' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>
+                            <rect x='1.5' y='1.5' width='29' height='29' rx='6' fill='none' stroke='%23278e43' stroke-width='2.5'/><path d='M7.5,11.5 L13.5,16 L7.5,20.5' fill='none' stroke='%23E53935' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>
                             <g transform='translate(22.5,16)'>
                                 <circle cx='0' cy='0' r='3' fill='%23FFC107'/>
-                                <use href='%23nav-r' transform='rotate(0)'/>
-                                <use href='%23nav-r' transform='rotate(17.14)'/>
-                                <use href='%23nav-r' transform='rotate(34.29)'/>
-                                <use href='%23nav-r' transform='rotate(51.43)'/>
-                                <use href='%23nav-r' transform='rotate(68.57)'/>
-                                <use href='%23nav-r' transform='rotate(85.71)'/>
-                                <use href='%23nav-r' transform='rotate(102.86)'/>
-                                <use href='%23nav-r' transform='rotate(120)'/>
-                                <use href='%23nav-r' transform='rotate(137.14)'/>
-                                <use href='%23nav-r' transform='rotate(154.29)'/>
-                                <use href='%23nav-r' transform='rotate(171.43)'/>
-                                <use href='%23nav-r' transform='rotate(188.57)'/>
-                                <use href='%23nav-r' transform='rotate(205.71)'/>
-                                <use href='%23nav-r' transform='rotate(222.86)'/>
-                                <use href='%23nav-r' transform='rotate(240)'/>
-                                <use href='%23nav-r' transform='rotate(257.14)'/>
-                                <use href='%23nav-r' transform='rotate(274.29)'/>
-                                <use href='%23nav-r' transform='rotate(291.43)'/>
-                                <use href='%23nav-r' transform='rotate(308.57)'/>
-                                <use href='%23nav-r' transform='rotate(325.71)'/>
-                                <use href='%23nav-r' transform='rotate(342.86)'/>
+                                <use href='%23nav-r' transform='rotate(0)'/><use href='%23nav-r' transform='rotate(17.14)'/><use href='%23nav-r' transform='rotate(34.29)'/><use href='%23nav-r' transform='rotate(51.43)'/><use href='%23nav-r' transform='rotate(68.57)'/><use href='%23nav-r' transform='rotate(85.71)'/><use href='%23nav-r' transform='rotate(102.86)'/><use href='%23nav-r' transform='rotate(120)'/><use href='%23nav-r' transform='rotate(137.14)'/><use href='%23nav-r' transform='rotate(154.29)'/><use href='%23nav-r' transform='rotate(171.43)'/><use href='%23nav-r' transform='rotate(188.57)'/><use href='%23nav-r' transform='rotate(205.71)'/><use href='%23nav-r' transform='rotate(222.86)'/><use href='%23nav-r' transform='rotate(240)'/><use href='%23nav-r' transform='rotate(257.14)'/><use href='%23nav-r' transform='rotate(274.29)'/><use href='%23nav-r' transform='rotate(291.43)'/><use href='%23nav-r' transform='rotate(308.57)'/><use href='%23nav-r' transform='rotate(325.71)'/><use href='%23nav-r' transform='rotate(342.86)'/>
                             </g>
                         </svg>
                     </div>
@@ -135,8 +114,8 @@
                     <i data-lucide="moon" class="w-5 h-5 block dark:hidden text-gray-600"></i>
                 </button>
 
-                <button class="md:hidden p-2" onclick="MobileMenu.toggle()" aria-label="Toggle menu">
-                    <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+                <button class="md:hidden p-2 flex items-center justify-center min-w-[40px] min-h-[40px]" onclick="MobileMenu.toggle()" aria-label="Toggle menu">
+                    <i id="menu-icon" data-lucide="menu" class="w-6 h-6 block stroke-current"></i>
                 </button>
             </div>
         </div>
@@ -152,12 +131,12 @@
         </div>
     </nav>
 
-    <header class="relative pt-48 pb-32 overflow-hidden mesh-bg">
-        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[1.1] mb-8">
+    <header class="relative pt-44 pb-24 overflow-hidden mesh-bg">
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-left sm:text-center">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[1.1] mb-6">
                 Software that speaks <span class="text-gradient">Kurdish.</span>
             </h1>
-            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed mb-10">
+            <p class="text-base sm:text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl sm:mx-auto leading-relaxed mb-8">
                 Engineering bridges between global software and the Kurdish community through precise localization and open-source contributions.
             </p>
         </div>
@@ -170,12 +149,12 @@
         </div>
     </div>
 
-    <section id="work" class="py-32">
+    <section id="work" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">Localization Hub</h2>
-                <div class="h-1 w-20 bg-[#278e43] mx-auto mb-6"></div>
-                <p class="text-[var(--text-secondary)] text-lg leading-relaxed">
+            <div class="text-left sm:text-center max-w-3xl sm:mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">Localization Hub</h2>
+                <div class="h-1 w-16 bg-[#278e43] sm:mx-auto mb-6"></div>
+                <p class="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed">
                     Bridging linguistic gaps across the digital ecosystem. Over 200,000 words systematically translated and structured to integrate the Kurmanji dialect into mainstream privacy tools, browsers, operating systems, and decentralized networks.
                 </p>
             </div>
@@ -183,9 +162,9 @@
         </div>
     </section>
 
-    <section id="keyboard" class="py-32 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/10">
+    <section id="keyboard" class="py-24 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/10">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 text-left">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#278e43]/10 text-[#278e43] border border-[#278e43]/20 text-xs font-mono mb-6">
                         <i data-lucide="terminal" class="w-4 h-4"></i> Linux Kernel Support
@@ -217,46 +196,38 @@
         </div>
     </section>
 
-    <section id="movies" class="py-32 border-t border-[var(--border-color)]">
+    <section id="movies" class="py-24 border-t border-[var(--border-color)]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl md:text-5xl font-bold mb-16">Cinema Subtitles</h2>
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-left sm:text-center">Cinema Subtitles</h2>
             <div id="movie-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
         </div>
     </section>
 
-    <section id="dictionary" class="py-32 relative overflow-hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)]">
+    <section id="dictionary" class="py-24 relative overflow-hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)]">
         <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" style="background-image: radial-gradient(#888 1px, transparent 1px); background-size: 24px 24px;"></div>
-
-        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-left sm:text-center">
             <div class="inline-block p-4 rounded-full bg-[var(--bg-surface)] border border-[var(--border-color)] mb-8 shadow-lg">
                 <i data-lucide="book-open" class="w-8 h-8 text-[#278e43]"></i>
             </div>
-             
             <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-[var(--text-primary)]">
                 Ferhenga <span class="text-gradient">Dijîtal</span>
             </h2>
-             
-            <p class="text-xl text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto">
+            <p class="text-lg sm:text-xl text-[var(--text-secondary)] mb-10 max-w-2xl sm:mx-auto">
                 Defining the future of technology in our language. Join the open database of technical Kurdish terms.
             </p>
-
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <div class="flex flex-col sm:flex-row justify-start sm:justify-center gap-4">
                 <a href="https://ferheng.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent">
                     <i data-lucide="languages" class="w-5 h-5"></i> Translate Now
                 </a>
             </div>
-
-            <div class="mt-16 max-w-2xl mx-auto bg-[#0a0a0a] border border-white/10 rounded-lg p-6 font-mono text-left text-sm shadow-2xl relative overflow-hidden">
+            <div class="mt-16 max-w-2xl sm:mx-auto bg-[#0a0a0a] border border-white/10 rounded-lg p-6 font-mono text-left text-sm shadow-2xl relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#278e43] to-[#56c476]"></div>
                 <div class="flex gap-2 mb-4">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
                 <div class="space-y-2">
                     <div class="flex gap-2">
-                        <span class="text-[#278e43]">❯</span>
-                        <span class="text-white">dict lookup "interface"</span>
+                        <span class="text-[#278e43]">❯</span><span class="text-white">dict lookup "interface"</span>
                     </div>
                     <div class="pl-4 text-gray-400">
                         &gt; Finding matches...<br>
@@ -264,8 +235,7 @@
                         &gt; Definition: The shared boundary across which two or more separate components of a computer system exchange information.
                     </div>
                     <div class="flex gap-2 mt-4">
-                        <span class="text-[#278e43]">❯</span>
-                        <span class="text-white animate-pulse">_</span>
+                        <span class="text-[#278e43]">❯</span><span class="text-white animate-pulse">_</span>
                     </div>
                 </div>
             </div>
@@ -274,14 +244,12 @@
 
     <footer id="contact" class="py-16 px-6 bg-[var(--bg-surface)] text-center border-t border-[var(--border-color)]">
         <div class="flex flex-col items-center justify-center gap-8">
-             
             <div class="flex flex-wrap justify-center gap-6">
                 <a href="mailto:cyaxxx@vivaldi.net" aria-label="Send email to cyaxxx@vivaldi.net" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-[#278e43] transition-all group">
                     <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                     <span class="font-medium">Email</span>
                 </a>
             </div>
-
             <div class="text-[10px] text-[var(--text-secondary)] font-mono uppercase tracking-[0.2em] mt-8">
                 &copy; 2026 CYAXXX. All rights reserved.
             </div>
@@ -289,17 +257,15 @@
     </footer>
 
     <script>
-        const obsSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50" fill="currentColor">
-            <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M43.765,34.373 c1.267-3.719-0.131-8.03-3.567-10.23c-4.024-2.576-9.374-1.401-11.95,2.623h0c-1.854,2.896-1.756,6.474-0.061,9.215 c-1.009,1.556-2.369,2.917-4.07,3.931c-5.4,3.22-12.356,1.952-16.225-2.779c-0.186-0.262-0.367-0.527-0.541-0.797 c2.62,3.273,7.404,4.213,11.166,2.09c4.161-2.348,5.631-7.625,3.283-11.786v0c-1.618-2.867-4.627-4.456-7.703-4.399 c-0.994-1.792-1.563-3.852-1.563-6.047c0-5.482,3.537-10.119,8.448-11.8c0.36-0.07,0.728-0.116,1.094-0.168 c-3.321,1.208-5.698,4.384-5.698,8.123c0,4.778,3.873,8.651,8.651,8.651c3.179,0,5.949-1.719,7.453-4.274 c2.197,0.015,4.417,0.594,6.427,1.825c5.056,3.094,7.173,9.294,5.39,14.713C44.137,33.643,43.948,34.007,43.765,34.373z"></path>
-        </svg>`;
+        const obsSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50" fill="currentColor"><path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M43.765,34.373 c1.267-3.719-0.131-8.03-3.567-10.23c-4.024-2.576-9.374-1.401-11.95,2.623h0c-1.854,2.896-1.756,6.474-0.061,9.215 c-1.009,1.556-2.369,2.917-4.07,3.931c-5.4,3.22-12.356,1.952-16.225-2.779c-0.186-0.262-0.367-0.527-0.541-0.797 c2.62,3.273,7.404,4.213,11.166,2.09c4.161-2.348,5.631-7.625,3.283-11.786v0c-1.618-2.867-4.627-4.456-7.703-4.399 c-0.994-1.792-1.563-3.852-1.563-6.047c0-5.482,3.537-10.119,8.448-11.8c0.36-0.07,0.728-0.116,1.094-0.168 c-3.321,1.208-5.698,4.384-5.698,8.123c0,4.778,3.873,8.651,8.651,8.651c3.179,0,5.949-1.719,7.453-4.274 c2.197,0.015,4.417,0.594,6.427,1.825c5.056,3.094,7.173,9.294,5.39,14.713C44.137,33.643,43.948,34.007,43.765,34.373z"></path></svg>`;
 
-        // Fully restructured and updated with clean descriptions
+        // Fixed item tags: Cleaned up and polished layout classification groupings (Search, Browser, Chat, Media, System, Automation, Shell, Graphics, etc.)
         const workData = [
-            { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "Search Engine", desc: "Mainstream privacy-focused search engine integration.", link: "https://duckduckgo.com" },
+            { name: "DuckDuckGo", slug: "duckduckgo", color: "#DE5833", tag: "Search", desc: "Mainstream privacy-focused search engine integration.", link: "https://duckduckgo.com" },
             { name: "Vivaldi", slug: "vivaldi", color: "#EF3939", tag: "Browser", desc: "Advanced, highly-customizable power-user web browser.", link: "https://vivaldi.com" },
             { name: "Librewolf", slug: "librewolf", color: "#0580F2", tag: "Browser", desc: "Community-driven, privacy-hardened Firefox fork.", link: "https://librewolf.net" },
-            { name: "OBS Studio", slug: "obs", color: "#FFFFFF", tag: "Broadcasting", desc: "Industry-standard open broadcasting and screen recording software.", link: "https://obsproject.com/", customIcon: true },
-            { name: "Archinstall", slug: "archlinux", color: "#1793D1", tag: "installer", desc: "Guided, streamlined installation framework for Arch Linux.", link: "https://archlinux.org" },
+            { name: "OBS Studio", slug: "obs", color: "#FFFFFF", tag: "Media", desc: "Industry-standard open broadcasting and screen recording software.", link: "https://obsproject.com/", customIcon: true },
+            { name: "Archinstall", slug: "archlinux", color: "#1793D1", tag: "System", desc: "Guided, streamlined installation framework for Arch Linux.", link: "https://archlinux.org" },
             { name: "Telegram", slug: "telegram", color: "#26A5E4", tag: "Chat", desc: "Cloud-based mass messaging and secure communications platform.", link: "https://telegram.org" },
             { name: "Mastodon", slug: "mastodon", color: "#6364FF", tag: "Social", desc: "Decentralized, federated social networking protocol.", link: "https://joinmastodon.org/ku" },
             { name: "Codeberg", slug: "codeberg", color: "#2185D0", tag: "Git Hosting", desc: "Privacy-first, non-profit git hosting service for FOSS software.", link: "https://codeberg.org/about" },
@@ -311,28 +277,28 @@
             { name: "Retro Music", slug: "android", color: "#3DDC84", tag: "Music", desc: "Premium, visually striking audio application for Android.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic", lucideIcon: "music" },
             { name: "SongTube", slug: "youtube", color: "#FF0000", tag: "Media", desc: "Feature-rich open media deployment utility for Android.", link: "https://t.me/songtubechannel" },
             { name: "Whoogle", slug: "google", color: "#4285F4", tag: "Search", desc: "Self-hosted, tracker-free search proxy stripping Google metadata.", link: "https://pypi.org/project/whoogle-search/" },
-            { name: "Kiwi Browser", slug: "kiwibrowser", color: "#47BD61", tag: "Mobile", desc: "Chromium-based mobile browser supporting desktop extensions.", link: "https://github.com/kiwibrowser/src.next", lucideIcon: "smartphone" },
+            { name: "Kiwi Browser", slug: "kiwibrowser", color: "#47BD61", tag: "Browser", desc: "Chromium-based mobile browser supporting desktop extensions.", link: "https://github.com/kiwibrowser/src.next", lucideIcon: "smartphone" },
             { name: "Noctalia", slug: "wayland", color: "#00CCFF", tag: "Shell", desc: "Lightweight, fluid system shell interface optimized for Wayland.", link: "https://docs.noctalia.dev/", lucideIcon: "monitor" },
-            { name: "ImageGlass", slug: "imageglass", color: "#2EADFF", tag: "Photos", desc: "Versatile, clean asset viewer designed for seamless graphics pipeline.", link: "https://imageglass.org/", lucideIcon: "image" },
-            { name: "qView", slug: "quicklook", color: "#40C4FF", tag: "Photos", desc: "Ultra-minimalist, rapid-rendering picture viewer with zero GUI clutter.", link: "https://interversehq.com/qview/", lucideIcon: "image" },
-            { name: "Quick Picture", slug: "windows", color: "#0078D4", tag: "Photos", desc: "Agile desktop image application built for speed and utility.", link: "https://moduleart.github.io/quickpictureviewer", lucideIcon: "image" },
+            { name: "ImageGlass", slug: "imageglass", color: "#2EADFF", tag: "Graphics", desc: "Versatile, clean asset viewer designed for seamless graphics pipeline.", link: "https://imageglass.org/", lucideIcon: "image" },
+            { name: "qView", slug: "quicklook", color: "#40C4FF", tag: "Graphics", desc: "Ultra-minimalist, rapid-rendering picture viewer with zero GUI clutter.", link: "https://interversehq.com/qview/", lucideIcon: "image" },
+            { name: "Quick Picture", slug: "windows", color: "#0078D4", tag: "Graphics", desc: "Agile desktop image application built for speed and utility.", link: "https://moduleart.github.io/quickpictureviewer", lucideIcon: "image" },
             { name: "UntrackMe", slug: "fdroid", color: "#1976D2", tag: "Privacy", desc: "Background security tool transforming tracking URLs into private mirrors.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/", lucideIcon: "shield" },
-            { name: "Ly", slug: "go", color: "#40C4FF", tag: "TUI", desc: "Compact, matrix-style terminal display login manager for Linux.", link: "https://github.com/fairyglade/ly", lucideIcon: "terminal" },
-            { name: "mLauncher", slug: "launcher", color: "#3DDC84", tag: "Launcher", desc: "Distraction-free, keyboard-centric layout interface for mobile environments.", link: "https://mlauncher.5646316.xyz/", lucideIcon: "rocket" }
+            { name: "Ly", slug: "go", color: "#40C4FF", tag: "Terminal", desc: "Compact, matrix-style terminal display login manager for Linux.", link: "https://github.com/fairyglade/ly", lucideIcon: "terminal" },
+            { name: "mLauncher", slug: "launcher", color: "#3DDC84", tag: "Shell", desc: "Distraction-free, keyboard-centric layout interface for mobile environments.", link: "https://mlauncher.5646316.xyz/", lucideIcon: "rocket" }
         ];
 
         const movieData = [
             { name: "THE BODY", year: "2017", genre: "MYSTERY", score: "7.6", desc: "Piştî mirina wê, bedena jina Alex winda dibe.", link: "https://tirsik.net/film/680", img: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9629845_p_v8_ab.jpg" },
             { name: "BENEATH US", year: "2020", genre: "HORROR", score: "5.2", desc: "Xewna Emerîkî ji bo penaberan dibe xewnereşk.", link: "https://tirsik.net/film/749", img: "https://resizing.flixster.com/Ok0RGPgfcimS_e22U1_KDOJxaeE=/206x305/v2/https://resizing.flixster.com/NrlLuhm1zh71lVM27m23-VTFsw4=/ems.cHJkLWVtcy1hc3N7bW92aWVzL2RjZjFhZGE0LTFhYTgtNGI5NS05OTVmLTc0ZmE2MGYyYjVjNy53ZWJw" },
             { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", link: "https://tirsik.net/film/257", img: "https://resizing.flixster.com/QqrCS2K1-mjyL7rA88Ko5IBRCUU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc2YjEzNWIxLTk5NjItNDM5ZC1iZjBlLWIxZmVjMzZkZDVkOC53ZWJw" },
-            { name: "THE HEAD HUNTER", year: "2019", genre: "HORROR", score: "5.4", desc: "kolesîyona serê mirovan ya şergerek ji serdema navîn, wenda ye. lê tenê ya wî cinawirî maye ku berî çend saban keça wî kuştibû..", link: "https://tirsik.net/film/769", img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMWU5MmY3YzAtMGZkNi00YWUwLWExZmQtYmI2OTZhZDVlNTdlXkEyXkFqcGc%40._V1__SX500&f=1&h=500" }
+            { name: "THE HEAD HUNTER", year: "2019", genre: "HORROR", score: "5.4", desc: "kolesîyona serê mirovan ya şergerek ji serdema navîn, wenda ye. lê tenê ya wî cinawirî maye ku berî çend saban keça wî kuştibû..", link: "https://tirsik.net/film/769", img: "https://m.media-amazon.com/images/M/MV5BMWU5MmY3YzAtMGZkNi00YWUwLWExZmQtYmI2OTZhZDVlNTdlXkEyXkFqcGc%40._V1__SX500" }
         ];
 
         const ThemeManager = {
             init() {
                 const saved = localStorage.getItem('theme');
                 if (saved === 'light') document.documentElement.classList.remove('dark');
-                lucide.createIcons();
+                setTimeout(() => { lucide.createIcons(); }, 50);
             },
             toggle() {
                 const isDark = document.documentElement.classList.toggle('dark');
@@ -347,7 +313,8 @@
             toggle() {
                 const menu = document.getElementById('mobile-menu');
                 const isHidden = menu.classList.toggle('hidden');
-                document.getElementById('menu-icon').setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+                const iconElement = document.getElementById('menu-icon');
+                iconElement.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
                 lucide.createIcons();
             },
             close() {
@@ -402,7 +369,6 @@
                 const container = document.getElementById('logo-marquee');
                 const isDark = document.documentElement.classList.contains('dark');
                 
-                // Telegram removed cleanly from the array loop below
                 const logos = [
                     { slug: 'duckduckgo', name: 'DuckDuckGo' },
                     { slug: 'vivaldi', name: 'Vivaldi' },
@@ -421,12 +387,18 @@
             }
         };
 
-        // Initialize and fire layout icon renderer
+        // Complete DOM paint triggers
         ThemeManager.init();
         DataManager.renderProjects();
         DataManager.renderMovies();
         DataManager.renderMarquee();
-        lucide.createIcons(); 
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+        window.addEventListener('load', () => {
+            lucide.createIcons();
+        });
     </script>
 </body>
 </html>
