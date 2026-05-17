@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyaxares • Kurdization</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><defs><polygon id='r' points='0,-6.5 -0.55,-3 0.55,-3' fill='%23FFC107'/></defs><rect x='1.5' y='1.5' width='29' height='29' rx='6' fill='none' stroke='%23278e43' stroke-width='2.5'/><path d='M7.5,11.5 L13.5,16 L7.5,20.5' fill='none' stroke='%23E53935' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><g transform='translate(22.5,16)'><circle cx='0' cy='0' r='3' fill='%23FFC107'/><use href='%23r' transform='rotate(0)'/><use href='%23r' transform='rotate(17.14)'/><use href='%23r' transform='rotate(34.29)'/><use href='%23r' transform='rotate(51.43)'/><use href='%23r' transform='rotate(68.57)'/><use href='%23r' transform='rotate(85.71)'/><use href='%23r' transform='rotate(102.86)'/><use href='%23r' transform='rotate(120)'/><use href='%23r' transform='rotate(137.14)'/><use href='%23r' transform='rotate(154.29)'/><use href='%23r' transform='rotate(171.43)'/><use href='%23r' transform='rotate(188.57)'/><use href='%23r' transform='rotate(205.71)'/><use href='%23r' transform='rotate(222.86)'/><use href='%23r' transform='rotate(240)'/><use href='%23r' transform='rotate(257.14)'/><use href='%23r' transform='rotate(274.29)'/><use href='%23r' transform='rotate(291.43)'/><use href='%23r' transform='rotate(308.57)'/><use href='%23r' transform='rotate(325.71)'/><use href='%23r' transform='rotate(342.86)'/></g></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><defs><polygon id='r' points='0,-6.5 -0.55,-3 0.55,-3' fill='%23FFC107'/></defs><rect x='1.5' y='1.5' width='29' height='29' rx='6' fill='none' stroke='%2310b981' stroke-width='2.5'/><path d='M7.5,11.5 L13.5,16 L7.5,20.5' fill='none' stroke='%23E53935' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><g transform='translate(22.5,16)'><circle cx='0' cy='0' r='3' fill='%23FFC107'/><use href='%23r' transform='rotate(0)'/><use href='%23r' transform='rotate(17.14)'/><use href='%23r' transform='rotate(34.29)'/><use href='%23r' transform='rotate(51.43)'/><use href='%23r' transform='rotate(68.57)'/><use href='%23r' transform='rotate(85.71)'/><use href='%23r' transform='rotate(102.86)'/><use href='%23r' transform='rotate(120)'/><use href='%23r' transform='rotate(137.14)'/><use href='%23r' transform='rotate(154.29)'/><use href='%23r' transform='rotate(171.43)'/><use href='%23r' transform='rotate(188.57)'/><use href='%23r' transform='rotate(205.71)'/><use href='%23r' transform='rotate(222.86)'/><use href='%23r' transform='rotate(240)'/><use href='%23r' transform='rotate(257.14)'/><use href='%23r' transform='rotate(274.29)'/><use href='%23r' transform='rotate(291.43)'/><use href='%23r' transform='rotate(308.57)'/><use href='%23r' transform='rotate(325.71)'/><use href='%23r' transform='rotate(342.86)'/></g></svg>">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2 family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -62,7 +62,6 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        /* Upgraded to a stunning high-contrast Emerald Green gradient */
         .text-gradient {
             background: linear-gradient(to right, #10b981, #059669);
             -webkit-background-clip: text;
@@ -80,12 +79,12 @@
         .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--brand-primary); border-radius: 4px; }
     </style>
 </head>
-<body class="custom-scrollbar">
+<body id="home" class="custom-scrollbar">
 
     <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between w-full">
-            <div class="flex items-center justify-start">
-                <a href="index.html" class="text-2xl font-bold tracking-tighter flex items-center gap-3 group">
+            <div class="flex items-center justify-start gap-4">
+                <a href="#home" class="text-2xl font-bold tracking-tighter flex items-center gap-3 group" aria-label="Cyaxares Home">
                     <div class="p-1 bg-transparent rounded-lg transition-all duration-300 group-hover:scale-105">
                         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none' class="w-9 h-9">
                             <defs>
@@ -98,6 +97,10 @@
                             </g>
                         </svg>
                     </div>
+                </a>
+                
+                <a href="#home" class="p-2 rounded-full hover:bg-[var(--bg-surface-highlight)] border border-transparent hover:border-[var(--border-color)] transition-colors text-[var(--text-secondary)] hover:text-[var(--brand-primary)]" title="Go to Home">
+                    <i data-lucide="home" class="w-5 h-5"></i>
                 </a>
             </div>
 
@@ -123,6 +126,7 @@
 
         <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] p-6 flex flex-col gap-6 shadow-2xl">
             <div class="flex flex-col gap-4">
+                <a href="#home" onclick="MobileMenu.close()" class="text-lg font-medium">Home</a>
                 <a href="#work" onclick="MobileMenu.close()" class="text-lg font-medium">Projects</a>
                 <a href="#keyboard" onclick="MobileMenu.close()" class="text-lg font-medium">Keyboard</a>
                 <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Subtitles</a>
@@ -260,7 +264,6 @@
     <script>
         const obsSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50" fill="currentColor"><path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M43.765,34.373 c1.267-3.719-0.131-8.03-3.567-10.23c-4.024-2.576-9.374-1.401-11.95,2.623h0c-1.854,2.896-1.756,6.474-0.061,9.215 c-1.009,1.556-2.369,2.917-4.07,3.931c-5.4,3.22-12.356,1.952-16.225-2.779c-0.186-0.262-0.367-0.527-0.541-0.797 c2.62,3.273,7.404,4.213,11.166,2.09c4.161-2.348,5.631-7.625,3.283-11.786v0c-1.618-2.867-4.627-4.456-7.703-4.399 c-0.994-1.792-1.563-3.852-1.563-6.047c0-5.482,3.537-10.119,8.448-11.8c0.36-0.07,0.728-0.116,1.094-0.168 c-3.321,1.208-5.698,4.384-5.698,8.123c0,4.778,3.873,8.651,8.651,8.651c3.179,0,5.949-1.719,7.453-4.274 c2.197,0.015,4.417,0.594,6.427,1.825c5.056,3.094,7.173,9.294,5.39,14.713C44.137,33.643,43.948,34.007,43.765,34.373z"></path></svg>`;
 
-        // SWITCHED FROM EXTERNAL SIMPLEICONS TO ROBUST, AD-BLOCK PROOF NATIVE LUCIDE MOUNTINGS
         const workData = [
             { name: "DuckDuckGo", lucideIcon: "search", color: "#DE5833", tag: "SEARCH", desc: "Mainstream privacy-focused search engine integration.", link: "https://duckduckgo.com" },
             { name: "Vivaldi", lucideIcon: "globe", color: "#EF3939", tag: "BROWSER", desc: "Advanced, highly-customizable power-user web browser.", link: "https://vivaldi.com" },
@@ -367,7 +370,6 @@
             renderMarquee() {
                 const container = document.getElementById('logo-marquee');
                 
-                // Using clean, embedded Lucide elements for the marquee banner to protect against mobile blocklists
                 const logos = [
                     { icon: 'search', name: 'DuckDuckGo' },
                     { icon: 'globe', name: 'Vivaldi' },
@@ -386,7 +388,6 @@
             }
         };
 
-        // Execution pipeline
         ThemeManager.init();
         DataManager.renderProjects();
         DataManager.renderMovies();
