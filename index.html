@@ -138,7 +138,7 @@
     <header class="relative pt-48 pb-28 overflow-hidden mesh-bg">
         <div class="max-w-5xl mx-auto px-6 relative z-10 text-left sm:text-center">
             <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.05] mb-8 select-none">
-                <div style="color: #ED2024;">Free Open Source Software</div>
+                <div style="color: #ED2024;">FOSS</div>
                 <div style="color: #FEBD11;">in</div>
                 <div style="color: #278e43;">Kurmanji Kurdish</div>
             </h1>
@@ -260,34 +260,34 @@
 
     <script>
         // Updated file fields to map precisely to your explicit GitHub file structure
-        const workData = [
-            { name: "DuckDuckGo", file: "DuckDuckGo.svg", color: "#DE5833", tag: "Search", desc: "Mainstream privacy-focused search engine integration.", link: "https://duckduckgo.com" }, 
-            { name: "COSMIC", file: "Cosmic.svg", color: "#2DA8D8", tag: "System", desc: "A modern, open-source desktop environment for the Linux ecosystem.", link: "https://system76.com/cosmic" },   
-            { name: "Vivaldi", file: "Vivaldi.svg", color: "#EF3939", tag: "Browser", desc: "A feature-rich, highly customizable web browser with built-in privacy tools.", link: "https://vivaldi.com" },
-            { name: "Librewolf", file: "LibreWolf.svg", color: "#0580F2", tag: "Browser", desc: "Community-driven, privacy-hardened Firefox fork.", link: "https://librewolf.net" },
-            { name: "OBS Studio", file: "OBS.svg", color: "#FFFFFF", tag: "Media", desc: "Industry-standard open broadcasting and screen recording software.", link: "https://obsproject.com/" },
-            { name: "Aves", file: "Aves.png", color: "#02569B", tag: "Gallery", desc: "A gallery and metadata explorer app, built for Android with Flutter.", link: "https://github.com/deckerst/aves/releases" },
-            { name: "Archinstall", file: "Arch.svg", color: "#1793D1", tag: "System", desc: "Guided, streamlined installation framework for Arch Linux.", link: "https://archlinux.org" },
-            { name: "Telegram", file: "Telegram.svg", color: "#26A5E4", tag: "Chat", desc: "Cloud-based mass messaging and secure communications platform.", link: "https://telegram.org" },
-            { name: "Mastodon", file: "Mastodon.svg", color: "#6364FF", tag: "Social", desc: "Decentralized, federated social networking protocol.", link: "https://joinmastodon.org/ku" },
-            { name: "Codeberg", file: "Codeberg.svg", color: "#2185D0", tag: "Git Hosting", desc: "Privacy-first, non-profit git hosting service for FOSS software.", link: "https://codeberg.org/about" },
-            { name: "Roundcube", file: "Roundcube.svg", color: "#37BEFF", tag: "Email", desc: "Browser-based multilingual IMAP webmail client solution.", link: "https://roundcube.net/" },
-            { name: "OpenMap", file: "Openstreetmap_logo.svg", color: "#7EBC6F", tag: "Maps", desc: "Collaborative, open-source world mapping infrastructure.", link: "https://www.openstreetmap.org" },
-            { name: "Nuclear", file: "Nuclear.svg", color: "#FA243C", tag: "Music", desc: "Desktop streaming player compiling open music repositories.", link: "https://nuclearplayer.com/" },
-            { name: "Dopamine", file: "Dopamine.png", color: "#00A2ED", tag: "Music", desc: "Sleek, minimalist audio player engineered for layout simplicity.", link: "https://digimezzo.github.io/site/" },
-            { name: "Harmonoid", file: "Harmonoid.png", color: "#00B2FF", tag: "Music", desc: "Material-designed music manager optimized for local tracks.", link: "https://harmonoid.com/" },
-            { name: "Retro Music", file: "Retro.png", color: "#3DDC84", tag: "Music", desc: "Premium, visually striking audio application for Android.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
-            { name: "SongTube", file: "SongTube.png", color: "#FF0000", tag: "Media", desc: "Feature-rich open media deployment utility for Android.", link: "https://t.me/songtubechannel" },
-            { name: "Whoogle", file: "Whoogle.svg", color: "#4285F4", tag: "Search", desc: "Self-hosted, tracker-free search proxy stripping Google metadata.", link: "https://pypi.org/project/whoogle-search/" },
-            { name: "Kiwi Browser", file: "KiwiBroswer.png", color: "#47BD61", tag: "Browser", desc: "Chromium-based mobile browser supporting desktop extensions.", link: "https://github.com/kiwibrowser/src.next" },
-            { name: "Noctalia", file: "Noctalia.svg", color: "#00CCFF", tag: "Shell", desc: "Lightweight, fluid system shell interface optimized for Wayland.", link: "https://docs.noctalia.dev/" },
-            { name: "ImageGlass", file: "ImageGlass.svg", color: "#2EADFF", tag: "Graphics", desc: "Versatile, clean asset viewer designed for seamless graphics pipeline.", link: "https://imageglass.org/" },
-            { name: "qView", file: "qView.png", color: "#40C4FF", tag: "Graphics", desc: "Ultra-minimalist, rapid-rendering picture viewer with zero GUI clutter.", link: "https://interversehq.com/qview/" },
-            { name: "Quick Picture", file: "QuickImageViewer.png", color: "#0078D4", tag: "Graphics", desc: "Agile desktop image application built for speed and utility.", link: "https://moduleart.github.io/quickpictureviewer" },
-            { name: "UntrackMe", file: "Donttrackme.png", color: "#1976D2", tag: "Privacy", desc: "Background security tool transforming tracking URLs into private mirrors.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
-            { name: "Ly", file: "Ly.svg", color: "#40C4FF", tag: "Terminal", desc: "Compact, matrix-style terminal display login manager for Linux.", link: "https://github.com/fairyglade/ly" },
-            { name: "mLauncher", file: "mLauncher.png", color: "#3DDC84", tag: "Shell", desc: "Distraction-free, keyboard-centric layout interface for mobile environments.", link: "https://mlauncher.5646316.xyz/" }
-        ];
+       const workData = [
+    { name: "DuckDuckGo", file: "DuckDuckGo.svg", color: "#DE5833", desc: "Popular privacy focused search engine integration.", link: "https://duckduckgo.com" }, 
+    { name: "COSMIC", file: "Cosmic.svg", color: "#2DA8D8", desc: "Modern open source desktop environment for the Linux ecosystem.", link: "https://system76.com/cosmic" },   
+    { name: "Vivaldi", file: "Vivaldi.svg", color: "#EF3939", desc: "Feature rich highly customizable web browser with built in privacy tools.", link: "https://vivaldi.com" },
+    { name: "Librewolf", file: "LibreWolf.svg", color: "#0580F2", desc: "Community driven privacy hardened Firefox fork.", link: "https://librewolf.net" },
+    { name: "OBS Studio", file: "OBS.svg", color: "#FFFFFF", desc: "Industry standard open broadcasting and screen recording software.", link: "https://obsproject.com/" },
+    { name: "Aves", file: "Aves.png", color: "#02569B", desc: "Gallery and metadata explorer app built for Android with Flutter.", link: "https://github.com/deckerst/aves/releases" },
+    { name: "Archinstall", file: "Arch.svg", color: "#1793D1", desc: "Guided streamlined installation framework for Arch Linux.", link: "https://archlinux.org" },
+    { name: "Telegram", file: "Telegram.svg", color: "#26A5E4", desc: "Cloud based mass messaging and secure communications platform.", link: "https://telegram.org" },
+    { name: "Mastodon", file: "Mastodon.svg", color: "#6364FF", desc: "Decentralized federated social networking protocol.", link: "https://joinmastodon.org/ku" },
+    { name: "Codeberg", file: "Codeberg.svg", color: "#2185D0", desc: "Privacy first non profit git hosting service for FOSS software.", link: "https://codeberg.org/about" },
+    { name: "Roundcube", file: "Roundcube.svg", color: "#37BEFF", desc: "Browser based multilingual IMAP webmail client solution.", link: "https://roundcube.net/" },
+    { name: "OpenMap", file: "Openstreetmap_logo.svg", color: "#7EBC6F", desc: "Collaborative open source world mapping infrastructure.", link: "https://www.openstreetmap.org" },
+    { name: "Nuclear", file: "Nuclear.svg", color: "#FA243C", desc: "Desktop streaming player compiling open music repositories.", link: "https://nuclearplayer.com/" },
+    { name: "Dopamine", file: "Dopamine.png", color: "#00A2ED", desc: "Sleek minimalist audio player engineered for layout simplicity.", link: "https://digimezzo.github.io/site/" },
+    { name: "Harmonoid", file: "Harmonoid.png", color: "#00B2FF", desc: "Material designed music manager optimized for local tracks.", link: "https://harmonoid.com/" },
+    { name: "Retro Music", file: "Retro.png", color: "#3DDC84", desc: "Premium visually striking audio application for Android.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
+    { name: "SongTube", file: "SongTube.png", color: "#FF0000", desc: "Feature rich open media deployment utility for Android.", link: "https://t.me/songtubechannel" },
+    { name: "Whoogle", file: "Whoogle.svg", color: "#4285F4", desc: "Self hosted tracker free search proxy stripping Google metadata.", link: "https://pypi.org/project/whoogle-search/" },
+    { name: "Kiwi Browser", file: "KiwiBroswer.png", color: "#47BD61", desc: "Chromium based mobile browser supporting desktop extensions.", link: "https://github.com/kiwibrowser/src.next" },
+    { name: "Noctalia", file: "Noctalia.svg", color: "#00CCFF", desc: "Lightweight fluid system shell interface optimized for Wayland.", link: "https://docs.noctalia.dev/" },
+    { name: "ImageGlass", file: "ImageGlass.svg", color: "#2EADFF", desc: "Versatile clean asset viewer designed for a seamless graphics pipeline.", link: "https://imageglass.org/" },
+    { name: "qView", file: "qView.png", color: "#40C4FF", desc: "Ultra minimalist rapid rendering picture viewer with zero GUI clutter.", link: "https://interversehq.com/qview/" },
+    { name: "Quick Picture", file: "QuickImageViewer.png", color: "#0078D4", desc: "Agile desktop image application built for speed and utility.", link: "https://moduleart.github.io/quickpictureviewer" },
+    { name: "UntrackMe", file: "Donttrackme.png", color: "#1976D2", desc: "Background security tool transforming tracking URLs into private mirrors.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
+    { name: "Ly", file: "Ly.svg", color: "#40C4FF", desc: "Compact matrix style terminal display login manager for Linux.", link: "https://github.com/fairyglade/ly" },
+    { name: "mLauncher", file: "mLauncher.png", color: "#3DDC84", desc: "Distraction free keyboard centric layout interface for mobile environments.", link: "https://mlauncher.5646316.xyz/" }
+];
 
         const movieData = [
             { name: "THE BODY", year: "2017", genre: "MYSTERY", score: "7.6", desc: "Piştî mirina wê, bedena jina Alex winda dibe.", link: "https://tirsik.net/film/680", img: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9629845_p_v8_ab.jpg" },
