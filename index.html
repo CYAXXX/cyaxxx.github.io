@@ -138,9 +138,9 @@
     <header class="relative pt-48 pb-28 overflow-hidden mesh-bg">
         <div class="max-w-5xl mx-auto px-6 relative z-10 text-left sm:text-center">
             <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.05] mb-8 select-none">
-                <div style="color: #ED2024;">FOSS</div>
-                <div style="color: #FEBD11;">in</div>
-                <div style="color: #278e43;">Kurmanji Kurdish</div>
+                <div style="color: #ED2024;">Software</div>
+                <div style="color: #FEBD11;">speak</div>
+                <div style="color: #278e43;">Kurmanji</div>
             </h1>
         </div>
     </header>
@@ -168,7 +168,6 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 text-left">
-                    
                     <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tighter">Kurdish Keyboard</h2>
                     <p class="text-lg text-[var(--text-secondary)] mb-8 leading-relaxed">
                         A native XKB keyboard layout for Linux. Designed specifically for the Kurdish (Kurmanji) language with seamless system integration.
@@ -333,6 +332,8 @@
                             <div class="w-12 h-12 rounded-xl bg-[var(--bg-surface-highlight)] border border-[var(--border-color)] flex items-center justify-center transition-all">
                                 <img src="icons/${item.file}" class="w-6 h-6 transition-all duration-300 object-contain" alt="${item.name}">
                             </div>
+                            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-secondary)]">${item.tag}</span>
+                        </div>
                         <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 relative z-10">${item.name}</h3>
                         <p class="text-[var(--text-secondary)] text-sm leading-relaxed relative z-10">${item.desc}</p>
                         <div class="absolute -bottom-16 -right-16 w-32 h-32 opacity-0 group-hover:opacity-5 blur-[40px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
