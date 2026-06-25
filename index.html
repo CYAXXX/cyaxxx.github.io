@@ -70,8 +70,8 @@
 
         .mesh-bg {
             background-image:
-                radial-gradient(at 0% 0%, rgba(39, 142, 67, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(39, 142, 67, 0.15) 0px, transparent 50%);
+                radial-gradient(at 50% 0%, rgba(39, 142, 67, 0.12) 0px, transparent 60%),
+                radial-gradient(at 100% 100%, rgba(39, 142, 67, 0.08) 0px, transparent 50%);
         }
 
         .custom-scrollbar::-webkit-scrollbar { width: 8px; }
@@ -79,7 +79,7 @@
         .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--brand-primary); border-radius: 4px; }
     </style>
 </head>
-<body id="home" class="custom-scrollbar">
+<body id="home" class="custom-scrollbar text-center">
 
     <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between w-full">
@@ -125,7 +125,7 @@
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] p-6 flex flex-col gap-6 shadow-2xl">
-            <div class="flex flex-col gap-4 text-left">
+            <div class="flex flex-col gap-4 text-center">
                 <a href="#work" onclick="MobileMenu.close()" class="text-lg font-medium">Projects</a>
                 <a href="#keyboard" onclick="MobileMenu.close()" class="text-lg font-medium">Keyboard</a>
                 <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Subtitles</a>
@@ -136,8 +136,8 @@
     </nav>
 
     <header class="relative pt-48 pb-28 overflow-hidden mesh-bg">
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-left">
-            <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.1] mb-8 select-none flex flex-col gap-2">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.1] mb-8 select-none flex flex-col items-center gap-2">
                 <span class="text-[#ED2024]">Software</span>
                 <span class="text-[#FEBD11]">speak</span>
                 <span class="text-[#278e43]">Kurmanji</span>
@@ -146,17 +146,17 @@
     </header>
 
     <div class="border-y border-[var(--border-color)] bg-[var(--bg-surface)]/50">
-        <div class="max-w-7xl mx-auto px-6 py-12 text-left">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center">
             <p class="text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-[0.3em] mb-10">Proud Contributor to Global Projects</p>
-            <div id="logo-marquee" class="flex flex-wrap justify-start gap-10 md:gap-16 items-center transition-all duration-500"></div>
+            <div id="logo-marquee" class="flex flex-wrap justify-center gap-10 md:gap-16 items-center transition-all duration-500"></div>
         </div>
     </div>
 
     <section id="work" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-left max-w-3xl mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">Translation as resistance</h2>
-                <p class="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed max-w-xl">
+                <p class="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed mx-auto max-w-xl">
                     Mapping Kurmanji onto the digital landscape. Hard-coding the dialect into the heart of every privacy tool. Subverting the status quo to build a sovereign digital infrastructure.
                 </p>
             </div>
@@ -167,7 +167,7 @@
     <section id="keyboard" class="py-24 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/10">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="flex-1 w-full text-left">
+                <div class="flex-1 w-full text-center lg:text-left flex flex-col items-center lg:items-start">
                     <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tighter">Kurdish Keyboard</h2>
                     <p class="text-lg text-[var(--text-secondary)] mb-8 leading-relaxed max-w-xl">
                         A native XKB keyboard layout for Linux. Designed specifically for the Kurdish (Kurmanji) language with seamless system integration.
@@ -197,26 +197,26 @@
 
     <section id="movies" class="py-24 border-t border-[var(--border-color)]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-left tracking-tight">Cinema Subtitles</h2>
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-center tracking-tight">Cinema Subtitles</h2>
             <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left"></div>
         </div>
     </section>
 
     <section id="dictionary" class="py-24 relative overflow-hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)]">
         <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" style="background-image: radial-gradient(#888 1px, transparent 1px); background-size: 24px 24px;"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-left">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center flex flex-col items-center">
             <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-[var(--text-primary)]">
                 Ferhenga <span class="text-gradient">Dijîtal</span>
             </h2>
-            <p class="text-lg sm:text-xl text-[var(--text-secondary)] mb-10 max-w-2xl">
+            <p class="text-lg sm:text-xl text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto">
                 Defining the future of technology in our language. Join the open database of technical Kurdish terms.
             </p>
-            <div class="flex flex-col sm:flex-row justify-start gap-4">
-                <a href="https://ferheng.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full">
+                <a href="https://ferheng.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent sm:w-auto">
                     <i data-lucide="languages" class="w-5 h-5"></i> Translate Now
                 </a>
             </div>
-            <div class="mt-16 max-w-2xl bg-[#0a0a0a] border border-white/10 rounded-lg p-6 font-mono text-left text-sm shadow-2xl relative overflow-hidden">
+            <div class="mt-16 w-full max-w-2xl bg-[#0a0a0a] border border-white/10 rounded-lg p-6 font-mono text-left text-sm shadow-2xl relative overflow-hidden mx-auto">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#278e43] to-[#56c476]"></div>
                 <div class="flex gap-2 mb-4">
                     <div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div>
@@ -238,9 +238,9 @@
         </div>
     </section>
 
-    <footer id="contact" class="py-16 px-6 bg-[var(--bg-surface)] text-left border-t border-[var(--border-color)]">
-        <div class="max-w-7xl mx-auto flex flex-col items-start justify-center gap-8">
-            <div class="flex flex-wrap justify-start gap-6">
+    <footer id="contact" class="py-16 px-6 bg-[var(--bg-surface)] text-center border-t border-[var(--border-color)]">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-8">
+            <div class="flex flex-wrap justify-center gap-6">
                 <a href="mailto:cyaxxx@vivaldi.net" aria-label="Send email to cyaxxx@vivaldi.net" class="flex items-center gap-2 px-6 py-3 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg hover:border-[#278e43] transition-all group">
                     <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                     <span class="font-medium">Email</span>
@@ -285,7 +285,7 @@
         const movieData = [
             { name: "THE BODY", year: "2017", genre: "MYSTERY", score: "7.6", desc: "Piştî mirina wê, bedena jina Alex winda dibe.", link: "https://tirsik.net/film/680", img: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9629845_p_v8_ab.jpg" },
             { name: "BENEATH US", year: "2020", genre: "HORROR", score: "5.2", desc: "Xewna Emerîkî ji bo penaberan dibe xewnereşk.", link: "https://tirsik.net/film/749", img: "https://image.tmdb.org/t/p/w342/uqo4lQ5n0hGSdztBLURleHUDnmu.jpg" },
-            { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", link: "https://tirsik.net/film/257", img: "https://image.tmdb.org/t/p/w342/8fIgsHFQtg47xxN7SBwZkg0tZJn.jpg" },
+            { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", link: "https://tirsik.net/film/257", img: "https://resizing.flixster.com/QqrCS2K1-mjyL7YA88Ko5IBRCUU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc2YjEzNWIxLTk5NjItNDM5ZC1iZjBlLWIxZmVjMzZkZDVkOC53ZWJw" },
             { name: "THE HEAD HUNTER", year: "2019", genre: "HORROR", score: "5.4", desc: "kolesîyona serê mirovan ya şergerek ji serdema navîn, wenda ye. lê tenê ya wî cinawirî maye ku berî çend saban keça wî kuştibû..", link: "https://tirsik.net/film/769", img: "https://m.media-amazon.com/images/M/MV5BMWU5MmY3YzAtMGZkNi00YWUwLWExZmQtYmI2OTZhZDVlNTdlXkEyXkFqcGc%40._V1__SX500" }
         ];
 
