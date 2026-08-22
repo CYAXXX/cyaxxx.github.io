@@ -1,3 +1,3 @@
-I have been activly translating everything I see into Kurdish (Kurmanji) since 2017. I try to maintain keeping the translation of more than 20 apps up to date. 
+I have been activly translating everything I see into Kurdish (Kurmanji) since 2017. I try to maintain keeping the translation of more than 30 apps up to date. 
 All that mostly alone.
 
