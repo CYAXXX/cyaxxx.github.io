@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Kurdization Project</title>
+    <title>Cyaxares | A Kurdization Project</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><defs><polygon id='r' points='0,-6.5 -0.55,-3 0.55,-3' fill='%23FFC107'/></defs><rect x='1.5' y='1.5' width='29' height='29' rx='6' fill='none' stroke='%23278e43' stroke-width='2.5'/><path d='M7.5,11.5 L13.5,16 L7.5,20.5' fill='none' stroke='%23E53935' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><g transform='translate(22.5,16)'><circle cx='0' cy='0' r='3' fill='%23FFC107'/><use href='%23r' transform='rotate(0)'/><use href='%23r' transform='rotate(17.14)'/><use href='%23r' transform='rotate(34.29)'/><use href='%23r' transform='rotate(51.43)'/><use href='%23r' transform='rotate(68.57)'/><use href='%23r' transform='rotate(85.71)'/><use href='%23r' transform='rotate(102.86)'/><use href='%23r' transform='rotate(120)'/><use href='%23r' transform='rotate(137.14)'/><use href='%23r' transform='rotate(154.29)'/><use href='%23r' transform='rotate(171.43)'/><use href='%23r' transform='rotate(188.57)'/><use href='%23r' transform='rotate(205.71)'/><use href='%23r' transform='rotate(222.86)'/><use href='%23r' transform='rotate(240)'/><use href='%23r' transform='rotate(257.14)'/><use href='%23r' transform='rotate(274.29)'/><use href='%23r' transform='rotate(291.43)'/><use href='%23r' transform='rotate(308.57)'/><use href='%23r' transform='rotate(325.71)'/><use href='%23r' transform='rotate(342.86)'/></g></svg>">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
             --text-primary: #111827;
             --text-secondary: #4b5563;
             --border-color: rgba(0, 0, 0, 0.1);
-            --nav-bg: rgba(255, 255, 255, 0.8);
+            --nav-bg: rgba(255, 255, 255, 0.85);
         }
 
         .dark {
@@ -46,7 +46,7 @@
             --text-primary: #ffffff;
             --text-secondary: #9ca3af;
             --border-color: rgba(255, 255, 255, 0.1);
-            --nav-bg: rgba(5, 5, 5, 0.8);
+            --nav-bg: rgba(5, 5, 5, 0.85);
         }
 
         body {
@@ -62,21 +62,16 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        .text-gradient {
-            background: linear-gradient(to right, #278e43, #56c476);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
         .mesh-bg {
             background-image:
                 radial-gradient(at 50% 0%, rgba(39, 142, 67, 0.12) 0px, transparent 60%),
                 radial-gradient(at 100% 100%, rgba(39, 142, 67, 0.08) 0px, transparent 50%);
         }
 
-        .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+        .custom-scrollbar::-webkit-scrollbar { width: 8px; height: 8px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: var(--bg-primary); }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--brand-primary); border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: var(--brand-primary); }
     </style>
 </head>
 <body id="home" class="custom-scrollbar text-center">
@@ -92,8 +87,7 @@
                             </defs>
                             <rect x='1.5' y='1.5' width='29' height='29' rx='6' fill='none' stroke='%23278e43' stroke-width='2.5'/><path d='M7.5,11.5 L13.5,16 L7.5,20.5' fill='none' stroke='%23E53935' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>
                             <g transform='translate(22.5,16)'>
-                                <circle cx='0' cy='0' r='3' fill='%23FFC107'/>
-                                <use href='%23nav-r' transform='rotate(0)'/><use href='%23nav-r' transform='rotate(17.14)'/><use href='%23nav-r' transform='rotate(34.29)'/><use href='%23nav-r' transform='rotate(51.43)'/><use href='%23nav-r' transform='rotate(68.57)'/><use href='%23nav-r' transform='rotate(85.71)'/><use href='%23nav-r' transform='rotate(102.86)'/><use href='%23nav-r' transform='rotate(120)'/><use href='%23nav-r' transform='rotate(137.14)'/><use href='%23nav-r' transform='rotate(154.29)'/><use href='%23nav-r' transform='rotate(171.43)'/><use href='%23nav-r' transform='rotate(188.57)'/><use href='%23nav-r' transform='rotate(205.71)'/><use href='%23nav-r' transform='rotate(222.86)'/><use href='%23nav-r' transform='rotate(240)'/><use href='%23nav-r' transform='rotate(257.14)'/><use href='%23nav-r' transform='rotate(274.29)'/><use href='%23nav-r' transform='rotate(291.43)'/><use href='%23nav-r' transform='rotate(308.57)'/><use href='%23nav-r' transform='rotate(325.71)'/><use href='%23nav-r' transform='rotate(342.86)'/>
+                                <circle cx='0' cy='0' r='3' fill='%23FFC107'/><use href='%23nav-r' transform='rotate(0)'/><use href='%23nav-r' transform='rotate(17.14)'/><use href='%23nav-r' transform='rotate(34.29)'/><use href='%23nav-r' transform='rotate(51.43)'/><use href='%23nav-r' transform='rotate(68.57)'/><use href='%23nav-r' transform='rotate(85.71)'/><use href='%23nav-r' transform='rotate(102.86)'/><use href='%23nav-r' transform='rotate(120)'/><use href='%23nav-r' transform='rotate(137.14)'/><use href='%23nav-r' transform='rotate(154.29)'/><use href='%23nav-r' transform='rotate(171.43)'/><use href='%23nav-r' transform='rotate(188.57)'/><use href='%23nav-r' transform='rotate(205.71)'/><use href='%23nav-r' transform='rotate(222.86)'/><use href='%23nav-r' transform='rotate(240)'/><use href='%23nav-r' transform='rotate(257.14)'/><use href='%23nav-r' transform='rotate(274.29)'/><use href='%23nav-r' transform='rotate(291.43)'/><use href='%23nav-r' transform='rotate(308.57)'/><use href='%23nav-r' transform='rotate(325.71)'/><use href='%23nav-r' transform='rotate(342.86)'/>
                             </g>
                         </svg>
                     </div>
@@ -105,11 +99,11 @@
             </div>
 
             <div class="hidden md:flex justify-center items-center gap-8 text-sm font-medium text-[var(--text-secondary)] mx-auto">
-                <a href="#work" class="hover:text-[var(--brand-primary)] transition-colors">Projects</a>
-                <a href="#keyboard" class="hover:text-[var(--brand-primary)] transition-colors">Keyboard</a>
-                <a href="#movies" class="hover:text-[var(--brand-primary)] transition-colors">Subtitles</a>
-                <a href="#dictionary" class="hover:text-[var(--brand-primary)] transition-colors">Dictionary</a>
-                <a href="#contact" class="hover:text-[var(--brand-primary)] transition-colors">Contact</a>
+                <a href="#vision" class="hover:text-[var(--text-primary)] transition-colors">Vision</a>
+                <a href="#projects" class="hover:text-[var(--text-primary)] transition-colors">Projects</a>
+                <a href="#keyboard" class="hover:text-[var(--text-primary)] transition-colors">Keyboard</a>
+                <a href="#movies" class="hover:text-[var(--text-primary)] transition-colors">Movies</a>
+                <a href="#contact" class="hover:text-[var(--text-primary)] transition-colors">Contact</a>
             </div>
 
             <div class="flex justify-end items-center gap-4 ml-auto">
@@ -126,16 +120,16 @@
 
         <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] p-6 flex flex-col gap-6 shadow-2xl">
             <div class="flex flex-col gap-4 text-center">
-                <a href="#work" onclick="MobileMenu.close()" class="text-lg font-medium">Projects</a>
+                <a href="#vision" onclick="MobileMenu.close()" class="text-lg font-medium">Vision</a>
+                <a href="#projects" onclick="MobileMenu.close()" class="text-lg font-medium">Projects</a>
                 <a href="#keyboard" onclick="MobileMenu.close()" class="text-lg font-medium">Keyboard</a>
-                <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Subtitles</a>
-                <a href="#dictionary" onclick="MobileMenu.close()" class="text-lg font-medium">Dictionary</a>
+                <a href="#movies" onclick="MobileMenu.close()" class="text-lg font-medium">Movies</a>
                 <a href="#contact" onclick="MobileMenu.close()" class="text-lg font-medium">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header class="relative pt-48 pb-28 overflow-hidden mesh-bg">
+    <header class="relative pt-48 pb-24 overflow-hidden mesh-bg">
         <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
             <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[1.1] mb-8 select-none flex flex-col items-center gap-2">
                 <span class="text-[#ED2024]">Software</span>
@@ -145,137 +139,121 @@
         </div>
     </header>
 
-    <div class="border-y border-[var(--border-color)] bg-[var(--bg-surface)]/50">
+    <section id="vision" class="py-20 border-y border-[var(--border-color)] bg-[var(--bg-surface)]/30">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 tracking-tight text-[var(--text-primary)]">Vision</h2>
+            <p class="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+                Breaking linguistic boundaries in software environments. Working toward uncompromised digital sovereignty where open-source platforms natively recognize and speak Kurmanji.
+            </p>
+        </div>
+    </section>
+
+    <div class="border-b border-[var(--border-color)] bg-[var(--bg-surface)]/50">
         <div class="max-w-7xl mx-auto px-6 py-12 text-center">
-            <p class="text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-[0.3em] mb-10">Proud Contributor to Global Projects</p>
+            <p class="text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-[0.3em] mb-10 font-bold">Proud Contributor to Global Projects</p>
             <div id="logo-marquee" class="flex flex-wrap justify-center gap-10 md:gap-16 items-center transition-all duration-500"></div>
         </div>
     </div>
 
-    <section id="work" class="py-24">
+    <section id="projects" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">Translation as resistance</h2>
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 tracking-tight">Projects</h2>
                 <p class="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed mx-auto max-w-xl">
-                    Mapping Kurmanji Kurdish onto the digital landscape. Hard-coding the dialect into the heart of every privacy tool. Subverting the status quo to build a sovereign digital infrastructure.
+                    Expanding our native ecosystem by localizing essential open-source applications, desktop interfaces, and tools so that Kurmanji thrives everywhere.
                 </p>
             </div>
             <div id="work-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-left"></div>
         </div>
     </section>
 
-    <section id="keyboard" class="py-24 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/10">
+    <section id="keyboard" class="py-24 border-t border-[var(--border-color)] bg-[var(--bg-surface)]/30">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mx-auto flex flex-col items-center justify-center text-center">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-tighter">Kurdish Keyboard</h2>
-                <p class="text-lg text-[var(--text-secondary)] mb-8 leading-relaxed max-w-xl">
-                    A native XKB keyboard layout for Linux. Designed specifically for the Kurdish (Kurmanji) language with seamless system integration.
+            <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 tracking-tight">Kurdish Keyboard</h2>
+                <p class="text-lg text-[var(--text-secondary)] mb-12 leading-relaxed max-w-xl">
+                    A native keyboard layout built for Linux environments, engineered to provide seamless typing for Kurmanji speakers.
                 </p>
             
-                <div class="w-full bg-[#0D1117] rounded-2xl border border-[#30363D] overflow-hidden shadow-2xl">
-                    <div class="flex items-center gap-2 px-4 py-3 bg-[#161B22] border-b border-[#30363D]">
-                        <div class="flex gap-1.5"><div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div><div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div><div class="w-3 h-3 rounded-full bg-[#27C93F]"></div></div>
-                        <div class="text-[10px] font-mono text-gray-500 ml-4">copy & paste</div>
-</div>
-    <div class="p-6 font-mono text-sm sm:text-base text-gray-300 text-left">
-        <div class="flex gap-3"><span class="text-white">git clone https://github.com/Zinaro/KurdishKurmanjiKeyboard.git && cd KurdishKurmanjiKeyboard && chmod +x install.sh && ./install.sh && setxkbmap ku</span></div>
-    </div>
-</div>
+                <div class="w-full bg-[#0D1117] rounded-xl border border-[#30363D] overflow-hidden shadow-2xl transition-all hover:border-[var(--brand-primary)]/50">
+                    
+                    <div class="flex items-center justify-between px-4 py-3 bg-[#161B22] border-b border-[#30363D]">
+                        <div class="flex items-center gap-2 text-gray-400 font-mono text-sm">
+                            <i data-lucide="terminal" class="w-4 h-4"></i>
+                        </div>
+                        
+                        <button onclick="copyInstallCode(this)" class="flex items-center gap-1.5 text-[11px] font-mono text-gray-400 hover:text-white transition-colors bg-[#21262D] px-2.5 py-1.5 rounded-md border border-[#30363D]">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                            <span class="copy-text">Copy</span>
+                        </button>
+                    </div>
+
+                    <div class="p-6 font-mono text-sm sm:text-base text-gray-300 text-left overflow-x-auto custom-scrollbar">
+                        <div class="flex gap-3 whitespace-nowrap items-center">
+                            <span class="text-white" id="install-code">git clone https://github.com/Zinaro/KurdishKurmanjiKeyboard.git && cd KurdishKurmanjiKeyboard && chmod +x install.sh && ./install.sh && setxkbmap ku</span>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <section id="movies" class="py-24 border-t border-[var(--border-color)]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-center tracking-tight">Cinema Subtitles</h2>
+            <h2 class="text-3xl md:text-5xl font-black mb-16 text-center tracking-tight">Movies</h2>
             <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left"></div>
         </div>
     </section>
 
-    <section id="dictionary" class="py-24 relative overflow-hidden border-t border-[var(--border-color)] bg-[var(--bg-primary)]">
-        <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" style="background-image: radial-gradient(#888 1px, transparent 1px); background-size: 24px 24px;"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center flex flex-col items-center">
-            <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-[var(--text-primary)]">
-               Ferhenga Dijîtal
-            </h2>
-            <p class="text-lg sm:text-xl text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto">
-                Defining the future of technology in our language. Join the open database of technical Kurdish terms.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full">
-                <a href="https://ferheng.deno.dev/" target="_blank" class="px-8 py-4 bg-[#278e43] text-white font-bold rounded-lg hover:bg-[#1e6d33] transition-colors flex items-center justify-center gap-2 shadow-xl border border-transparent sm:w-auto">
-                    <i data-lucide="languages" class="w-5 h-5"></i> Translate Now
-                </a>
-            </div>
-            <div class="mt-16 w-full max-w-2xl bg-[#0a0a0a] border border-white/10 rounded-lg p-6 font-mono text-left text-sm shadow-2xl relative overflow-hidden mx-auto">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#278e43] to-[#56c476]"></div>
-                <div class="flex gap-2 mb-4">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div>
-                </div>
-                <div class="space-y-2">
-                    <div class="flex gap-2">
-                        <span class="text-[#278e43]">❯</span><span class="text-white">dict lookup "interface"</span>
-                    </div>
-                    <div class="pl-4 text-gray-400">
-                        &gt; Finding matches...<br>
-                        &gt; Result: <span class="text-white font-bold">"Navrû"</span> (Noun)<br>
-                        &gt; Definition: The shared boundary across which two or more separate components of a computer system exchange information.
-                    </div>
-                    <div class="flex gap-2 mt-4">
-                        <span class="text-[#278e43]">❯</span><span class="text-white animate-pulse">_</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="py-16 px-6 bg-[var(--bg-surface)] text-center border-t border-[var(--border-color)]">
-        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-8">
+    <footer id="contact" class="py-12 px-6 bg-[var(--bg-surface)] text-center border-t border-[var(--border-color)]">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-6">
             <div class="flex flex-wrap justify-center gap-6">
-                <a href="mailto:cyaxxx@vivaldi.net" aria-label="Send email to cyaxxx@vivaldi.net" class="p-3.5 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-full hover:border-[#278e43] transition-all group flex items-center justify-center">
-                    <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                <a href="mailto:cyaxxx@vivaldi.net" aria-label="Send email" class="p-4 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-2xl hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)] transition-all group flex items-center justify-center shadow-sm hover:shadow-md">
+                    <i data-lucide="mail" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
                 </a>
             </div>
-            <div class="text-[10px] text-[var(--text-secondary)] font-mono uppercase tracking-[0.2em] mt-8">
-                &copy; 2026 CYAXXX. All rights reserved.
+            <div class="text-[11px] text-[var(--text-secondary)] font-mono uppercase tracking-[0.2em] flex flex-col gap-1 items-center">
+                <span>&copy; Cyaxares</span>
+                <span>All rights reserved.</span>
             </div>
         </div>
     </footer>
 
     <script>
         const workData = [
-            { name: "DuckDuckGo", file: "DuckDuckGo.svg", color: "#DE5833", desc: "Popular privacy focused search engine integration.", link: "https://duckduckgo.com", tag: "Search Engine" }, 
-            { name: "OBS Studio", file: "OBS.svg", color: "#FFFFFF", desc: "Industry standard open broadcasting and screen recording software.", link: "https://obsproject.com/", tag: "Broadcasting Tool" },
-            { name: "Arch Installer", file: "Arch.svg", color: "#1793D1", desc: "Guided streamlined installation framework for Arch Linux.", link: "https://archlinux.org", tag: "OS Installer" },
-            { name: "Pop! OS Installer", file: "Pop.svg", color: "#48B9C7", desc: "The official installation framework and setup utility for Pop!_OS.", link: "https://pop.system76.com", tag: "OS Installer" },
-            { name: "COSMIC", file: "Cosmic.svg", color: "#2DA8D8", desc: "Modern open source desktop environment for the Linux ecosystem.", link: "https://system76.com/cosmic", tag: "Desktop Environment" },  
-            { name: "Zorin OS", file: "Zorin.svg", color: "#00C3FF", desc: "Alternative operating system designed to make your computer faster and more secure.", link: "https://zorin.com", tag: "Operating System" },
-            { name: "elementary OS", file: "elementary.svg", color: "#64BA3B", desc: "A fast and open desktop replacement for Windows and macOS.", link: "https://elementary.io", tag: "Operating System" },
-            { name: "Vivaldi", file: "Vivaldi.svg", color: "#EF3939", desc: "Feature rich highly customizable web browser with built in privacy tools.", link: "https://vivaldi.com", tag: "Web Browser" },
-            { name: "Librewolf", file: "LibreWolf.svg", color: "#0580F2", desc: "Community driven privacy hardened Firefox fork.", link: "https://librewolf.net", tag: "Web Browser" },
-            { name: "Popsicle", file: "Popsicle.png", color: "#22C55E", desc: "Multiple USB image flasher utility designed for parallel writing.", link: "https://github.com/pop-os/popsicle", tag: "Utility" },
-            { name: "balenaEtcher", file: "balena-etcher.svg", color: "#2F2F2F", desc: "Flash OS images to SD cards & USB drives, safely and easily.", link: "https://etcher.balena.io/", tag: "Utility" },     
-            { name: "Aves", file: "Aves.png", color: "#02569B", desc: "Gallery and metadata explorer app built for Android with Flutter.", link: "https://github.com/deckerst/aves/releases", tag: "Gallery" },
-            { name: "Telegram", file: "Telegram.svg", color: "#26A5E4", desc: "Cloud based mass messaging and secure communications platform.", link: "https://telegram.org", tag: "Messenger" },
-            { name: "Mastodon", file: "Mastodon.svg", color: "#6364FF", desc: "Decentralized federated social networking protocol.", link: "https://joinmastodon.org/ku", tag: "Social Network" },
-            { name: "Codeberg", file: "Codeberg.svg", color: "#2185D0", desc: "Privacy first non profit git hosting service for FOSS software.", link: "https://codeberg.org/about", tag: "Git Hosting" },
-            { name: "Chaw", file: "Chaw.png", color: "#1E8A44", desc: "Eye wellness app reminding you to take breaks from your screen.", link: "https://play.google.com/store/apps/details?id=com.chaw.app", tag: "Eye Wellness" },
-            { name: "Roundcube", file: "Roundcube.svg", color: "#37BEFF", desc: "Browser based multilingual IMAP webmail client solution.", link: "https://roundcube.net/", tag: "Webmail Client" },
-            { name: "OpenMap", file: "Openstreetmap_logo.svg", color: "#7EBC6F", desc: "Collaborative open source world mapping infrastructure.", link: "https://www.openstreetmap.org", tag: "Mapping Tool" },
-            { name: "Nuclear", file: "Nuclear.svg", color: "#FA243C", desc: "Desktop streaming player compiling open music repositories.", link: "https://nuclearplayer.com/", tag: "Music Player" },
-            { name: "Dopamine", file: "Dopamine.png", color: "#00A2ED", desc: "Sleek minimalist audio player engineered for layout simplicity.", link: "https://digimezzo.github.io/site/", tag: "Music Player" },
-            { name: "Harmonoid", file: "Harmonoid.png", color: "#00B2FF", desc: "Material designed music manager optimized for local tracks.", link: "https://harmonoid.com/", tag: "Music Player" },
-            { name: "Retro Music", file: "Retro.png", color: "#3DDC84", desc: "Premium visually striking audio application for Android.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic", tag: "Android App" },
-            { name: "SongTube", file: "SongTube.png", color: "#FF0000", desc: "Feature rich open media deployment utility for Android.", link: "https://t.me/songtubechannel", tag: "Android App" },
-            { name: "Whoogle", file: "Whoogle.svg", color: "#4285F4", desc: "Self hosted tracker free search proxy stripping Google metadata.", link: "https://pypi.org/project/whoogle-search/", tag: "Search Proxy" },
-            { name: "Kiwi Browser", file: "KiwiBroswer.png", color: "#47BD61", desc: "Chromium based mobile browser supporting desktop extensions.", link: "https://github.com/kiwibrowser/src.next", tag: "Mobile Browser" },
-            { name: "Noctalia", file: "Noctalia.svg", color: "#00CCFF", desc: "Lightweight fluid system shell interface optimized for Wayland.", link: "https://docs.noctalia.dev/", tag: "Display Shell" },
-            { name: "ImageGlass", file: "ImageGlass.svg", color: "#2EADFF", desc: "Versatile clean asset viewer designed for a seamless graphics pipeline.", link: "https://imageglass.org/", tag: "Image Viewer" },
-            { name: "qView", file: "qView.png", color: "#40C4FF", desc: "Ultra minimalist rapid rendering picture viewer with zero GUI clutter.", link: "https://interversehq.com/qview/", tag: "Image Viewer" },
-            { name: "Quick Picture", file: "QuickImageViewer.png", color: "#0078D4", desc: "Agile desktop image application built for speed and utility.", link: "https://moduleart.github.io/quickpictureviewer", tag: "Image Viewer" },
-            { name: "UntrackMe", file: "Donttrackme.png", color: "#1976D2", desc: "Background security tool transforming tracking URLs into private mirrors.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/", tag: "Privacy Utility" },
-            { name: "Ly", file: "Ly.svg", color: "#40C4FF", desc: "Compact matrix style terminal display login manager for Linux.", link: "https://github.com/fairyglade/ly", tag: "Display Manager" },
-            { name: "mLauncher", file: "mLauncher.png", color: "#3DDC84", desc: "Distraction free keyboard centric layout interface for mobile environments.", link: "https://mlauncher.5646316.xyz/", tag: "Mobile Launcher" }
+            { name: "DuckDuckGo", file: "DuckDuckGo.svg", color: "#DE5833", desc: "The Internet privacy company that empowers you to seamlessly take control of your personal information online.", link: "https://duckduckgo.com" }, 
+            { name: "OBS Studio", file: "OBS.svg", color: "#FFFFFF", desc: "Free and open source software for video recording and live streaming.", link: "https://obsproject.com/" },
+            { name: "Arch Installer", file: "Arch.svg", color: "#1793D1", desc: "A guided, command-line based installation script integrated directly into Arch Linux media.", link: "https://archlinux.org" },
+            { name: "Pop os", file: "Pop.svg", color: "#48B9C7", desc: "An operating system for STEM and creative professionals that lets you realize your potential.", link: "https://pop.system76.com" },
+            { name: "COSMIC", file: "Cosmic.svg", color: "#2DA8D8", desc: "A modern, extensible desktop environment built for advanced customization and usability.", link: "https://system76.com/cosmic" },  
+            { name: "Zorin OS", file: "Zorin.svg", color: "#00C3FF", desc: "The alternative to Windows and macOS designed to make your computer faster, more powerful, and privacy-respecting.", link: "https://zorin.com" },
+            { name: "elementary OS", file: "elementary.svg", color: "#64BA3B", desc: "A fast, open, and privacy-respecting desktop replacement for Windows and macOS.", link: "https://elementary.io" },
+            { name: "Vivaldi", file: "Vivaldi.svg", color: "#EF3939", desc: "A feature-rich, highly customizable web browser with built-in productivity tools and privacy protection.", link: "https://vivaldi.com" },
+            { name: "Librewolf", file: "LibreWolf.svg", color: "#0580F2", desc: "A custom version of Firefox focused on privacy, security and user freedom.", link: "https://librewolf.net" },
+            { name: "Popsicle", file: "Popsicle.png", color: "#22C55E", desc: "Multiple USB image flasher designed for writing raw disk images or ISOs across multiple drives simultaneously.", link: "https://github.com/pop-os/popsicle" },
+            { name: "balenaEtcher", file: "balena-etcher.svg", color: "#2F2F2F", desc: "Flash OS images to SD cards and USB drives, safely and easily.", link: "https://etcher.balena.io/" },     
+            { name: "Aves", file: "Aves.png", color: "#02569B", desc: "A cross-platform gallery and metadata explorer application built with Flutter.", link: "https://github.com/deckerst/aves/releases" },
+            { name: "Telegram", file: "Telegram.svg", color: "#26A5E4", desc: "A cloud-based mobile and desktop messaging app with a focus on security and speed.", link: "https://telegram.org" },
+            { name: "Mastodon", file: "Mastodon.svg", color: "#6364FF", desc: "Decentralized global social media built on open standards.", link: "https://joinmastodon.org/ku" },
+            { name: "Codeberg", file: "Codeberg.svg", color: "#2185D0", desc: "A democratic and non-profit platform for software development and version control using Git.", link: "https://codeberg.org/about" },
+            { name: "Chaw", file: "Chaw.png", color: "#1E8A44", desc: "An eye wellness assistant application designed to remind users to take regular screen breaks.", link: "https://play.google.com/store/apps/details?id=com.chaw.app" },
+            { name: "Roundcube", file: "Roundcube.svg", color: "#37BEFF", desc: "A browser-based multilingual IMAP client with an application-like user interface.", link: "https://roundcube.net/" },
+            { name: "OpenMap", file: "Openstreetmap_logo.svg", color: "#7EBC6F", desc: "OpenStreetMap is a mapped collaborative project built by a community of volunteers mapping the world.", link: "https://www.openstreetmap.org" },
+            { name: "Nuclear", file: "Nuclear.svg", color: "#FA243C", desc: "Streaming music player that pulls content from free online sources into a sleek desktop app.", link: "https://nuclearplayer.com/" },
+            { name: "Dopamine", file: "Dopamine.png", color: "#00A2ED", desc: "A minimalist audio player which tries to make listening to music as simple and pretty as possible.", link: "https://digimezzo.github.io/site/" },
+            { name: "Harmonoid", file: "Harmonoid.png", color: "#00B2FF", desc: "Play and manage your music library with ease using this material-designed local media player.", link: "https://harmonoid.com/" },
+            { name: "Retro Music", file: "Retro.png", color: "#3DDC84", desc: "A stunning material-designed local music player for Android with rich customization options.", link: "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic" },
+            { name: "SongTube", file: "SongTube.png", color: "#FF0000", desc: "A feature-rich media downloader and streaming client built for Android.", link: "https://t.me/songtubechannel" },
+            { name: "Whoogle", file: "Whoogle.svg", color: "#4285F4", desc: "A self-hosted, ad-free, and anonymous metasearch engine proxy stripping tracking elements.", link: "https://pypi.org/project/whoogle-search/" },
+            { name: "Kiwi Browser", file: "KiwiBroswer.png", color: "#47BD61", desc: "An Android browser designed to browse the internet, read news, watch videos and listen to music with extension support.", link: "https://github.com/kiwibrowser/src.next" },
+            { name: "Noctalia", file: "Noctalia.svg", color: "#00CCFF", desc: "A lightweight, fluid system shell interface optimized for Wayland compositors.", link: "https://docs.noctalia.dev/" },
+            { name: "ImageGlass", file: "ImageGlass.svg", color: "#2EADFF", desc: "A lightweight, versatile open-source image viewer designed for high-performance viewing pipelines.", link: "https://imageglass.org/" },
+            { name: "qView", file: "qView.png", color: "#40C4FF", desc: "Practical and minimal image viewer designed with zero interface clutter.", link: "https://interversehq.com/qview/" },
+            { name: "Quick Picture", file: "QuickImageViewer.png", color: "#0078D4", desc: "An agile desktop image utility built for high-speed file loading and preview workflows.", link: "https://moduleart.github.io/quickpictureviewer" },
+            { name: "UntrackMe", file: "Donttrackme.png", color: "#1976D2", desc: "An Android security tool that replaces public social media URLs with privacy-respecting alternatives.", link: "https://f-droid.org/en/packages/app.fedilab.nitterizeme/" },
+            { name: "Ly", file: "Ly.svg", color: "#40C4FF", desc: "A lightweight TUI display manager for Linux with animated terminal aesthetics.", link: "https://github.com/fairyglade/ly" },
+            { name: "mLauncher", file: "mLauncher.png", color: "#3DDC84", desc: "A minimalist, keyboard-centric mobile launcher built for optimal speed and distraction-free navigation.", link: "https://mlauncher.5646316.xyz/" }
         ];
 
         const movieData = [
@@ -284,6 +262,27 @@
             { name: "DON'T BREATHE", year: "2016", genre: "THRILLER", score: "7.1", desc: "Sê xort dikevin mala zilamekî kor ku leşkerekî kevn e.", link: "https://tirsik.net/film/257", img: "https://duckduckgo.com/i/3a3354a9bbf84652.png" },
             { name: "THE HEAD HUNTER", year: "2019", genre: "HORROR", score: "5.4", desc: "kolesîyona serê mirovan ya şergerek ji serdema navîn, wenda ye. lê tenê ya wî cinawirî maye ku berî çend saban keça wî kuştibû..", link: "https://tirsik.net/film/769", img: "https://m.media-amazon.com/images/M/MV5BMWU5MmY3YzAtMGZkNi00YWUwLWExZmQtYmI2OTZhZDVlNTdlXkEyXkFqcGc%40._V1__SX500" }
         ];
+
+        function copyInstallCode(btn) {
+            const code = document.getElementById('install-code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const textSpan = btn.querySelector('.copy-text');
+                const icon = btn.querySelector('i');
+                const originalText = textSpan.innerText;
+                
+                textSpan.innerText = 'Copied!';
+                icon.setAttribute('data-lucide', 'check');
+                icon.classList.add('text-green-400');
+                lucide.createIcons();
+                
+                setTimeout(() => {
+                    textSpan.innerText = originalText;
+                    icon.setAttribute('data-lucide', 'copy');
+                    icon.classList.remove('text-green-400');
+                    lucide.createIcons();
+                }, 2000);
+            });
+        }
 
         const ThemeManager = {
             init() {
@@ -319,16 +318,23 @@
             renderProjects() {
                 const container = document.getElementById('work-grid');
                 container.innerHTML = workData.map(item => `
-                    <a href="${item.link}" target="_blank" class="p-6 rounded-2xl flex flex-col h-full group relative overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-[var(--border-color)] bg-[var(--bg-surface)] hover:border-[var(--brand-primary)]">
-                        <div class="flex items-start justify-between mb-6 relative z-10">
-                            <div class="w-12 h-12 rounded-xl bg-[var(--bg-surface-highlight)] border border-[var(--border-color)] flex items-center justify-center transition-all">
-                                <img src="icons/${item.file}" class="w-6 h-6 transition-all duration-300 object-contain" alt="${item.name}">
+                    <a href="${item.link}" target="_blank" class="p-6 rounded-2xl flex flex-col h-full group relative overflow-hidden transition-all duration-300 border border-[var(--border-color)] bg-[var(--bg-surface)] hover:border-[var(--brand-primary)]/50 hover:shadow-xl hover:-translate-y-1">
+                        
+                        <div class="mb-5 relative z-10">
+                            <div class="w-12 h-12 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 shadow-sm">
+                                <img src="icons/${item.file}" class="w-6 h-6 object-contain drop-shadow-sm transition-all duration-300" alt="${item.name}">
                             </div>
-                            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-[var(--text-secondary)] bg-[var(--bg-surface-highlight)] px-2.5 py-1 rounded-md border border-[var(--border-color)]">${item.tag}</span>
                         </div>
-                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 relative z-10">${item.name}</h3>
-                        <p class="text-[var(--text-secondary)] text-sm leading-relaxed relative z-10">${item.desc}</p>
-                        <div class="absolute -bottom-16 -right-16 w-32 h-32 opacity-0 group-hover:opacity-5 blur-[40px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
+                        
+                        <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 relative z-10 transition-colors duration-300 group-hover:text-[var(--brand-primary)]">
+                            ${item.name}
+                        </h3>
+                        
+                        <p class="text-[var(--text-secondary)] text-sm leading-relaxed relative z-10 flex-grow">
+                            ${item.desc}
+                        </p>
+                        
+                        <div class="absolute -bottom-16 -right-16 w-32 h-32 opacity-0 group-hover:opacity-10 dark:group-hover:opacity-20 blur-[40px] transition-all duration-700 rounded-full" style="background-color: ${item.color}"></div>
                     </a>
                 `).join('');
                 lucide.createIcons();
@@ -337,11 +343,11 @@
                 const container = document.getElementById('movie-grid');
                 container.innerHTML = movieData.map(movie => `
                     <a href="${movie.link}" target="_blank" class="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-[var(--bg-surface)] border border-[var(--border-color)] shadow-lg">
-                        <img src="${movie.img}" class="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-60">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <img src="${movie.img}" class="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                         <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                            <h3 class="text-2xl font-black text-white italic mb-2">${movie.name}</h3>
-                            <p class="text-sm text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-500">${movie.desc}</p>
+                            <h3 class="text-2xl font-black text-white italic mb-2 transition-transform duration-300 group-hover:-translate-y-1">${movie.name}</h3>
+                            <p class="text-sm text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">${movie.desc}</p>
                         </div>
                     </a>
                 `).join('');
@@ -360,7 +366,7 @@
                 
                 container.innerHTML = logos.map(logo => {
                     const invertClass = (isDark && logo.invertOnDark) ? 'invert' : '';
-                    return `<img src="icons/${logo.file}" class="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity object-contain ${invertClass}" alt="${logo.name}" title="${logo.name}">`;
+                    return `<img src="icons/${logo.file}" class="h-8 w-auto opacity-50 hover:opacity-100 transition-opacity duration-300 object-contain ${invertClass}" alt="${logo.name}" title="${logo.name}">`;
                 }).join('');
             }
         };
