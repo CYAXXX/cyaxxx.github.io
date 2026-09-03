@@ -201,7 +201,12 @@
 
     <section id="movies" class="py-24 border-t border-[var(--border-color)]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl md:text-5xl font-black mb-16 text-center tracking-tight">Movies</h2>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 tracking-tight">Movies</h2>
+                <p class="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed">
+                    Bringing cinematic experiences to life with Kurmanji Kurdish subtitles.
+                </p>
+            </div>
             <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left"></div>
         </div>
     </section>
@@ -222,8 +227,7 @@
 
     <script>
         const workData = [
-            { name: "Pop os", file: "Pop.svg", color: "#48B9C7", desc: "An operating system for STEM and creative professionals that lets you realize your potential.", link: "https://pop.system76.com" },
-            { name: "Zorin OS", file: "Zorin.svg", color: "#00C3FF", desc: "The alternative to Windows and macOS designed to make your computer faster, more powerful, and privacy-respecting.", link: "https://zorin.com" },
+            { name: "Pop OS", file: "Pop.svg", color: "#48B9C7", desc: "Pop!_OS is designed to remove obstacles from your plate with fast updates, smooth multi-monitor workflows, and advanced window management.", link: "https://pop.system76.com" },            { name: "Zorin OS", file: "Zorin.svg", color: "#00C3FF", desc: "The alternative to Windows and macOS designed to make your computer faster, more powerful, and privacy-respecting.", link: "https://zorin.com" },
             { name: "elementary OS", file: "elementary.svg", color: "#64BA3B", desc: "A fast, open, and privacy-respecting desktop replacement for Windows and macOS.", link: "https://elementary.io" },
             { name: "COSMIC", file: "Cosmic.svg", color: "#2DA8D8", desc: "A modern, extensible desktop environment built for advanced customization and usability.", link: "https://system76.com/cosmic" },  
             { name: "Arch Installer", file: "Arch.svg", color: "#1793D1", desc: "A guided, command-line based installation script integrated directly into Arch Linux media.", link: "https://archlinux.org" },
@@ -358,9 +362,9 @@
                 
                 const logos = [
                     { file: 'DuckDuckGo.svg', name: 'DuckDuckGo', invertOnDark: false },
-                    { file: 'Cosmic.svg', name: 'Cosmic', invertOnDark: false },
-                    { file: 'OBS.svg', name: 'OBS', invertOnDark: true },
-                    { file: 'Arch.svg', name: 'Arch Linux', invertOnDark: false},
+                    { file: 'Pop.svg', name: 'Cosmic', invertOnDark: false },
+                    { file: 'OBS.svg', name: 'OBS', invertOnDark: false },
+                    { file: 'Roundcube.svg', name: 'Roundcube', invertOnDark: false},
                     { file: 'Mastodon.svg', name: 'Mastodon', invertOnDark: false }
                 ];
                 
